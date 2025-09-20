@@ -20,3 +20,13 @@ section img {
   height: auto;
 }
 
+/* CSS */
+
+p {
+  color: blue;
+}
+
+button {
+  background-color: rgb(150, 88, 212);
+}
+
