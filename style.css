@@ -1,7 +1,8 @@
+/* CSS */
+
 /* * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 } */
 
 section {
@@ -20,13 +21,25 @@ section img {
   height: auto;
 }
 
+header {
+  margin-bottom: 3rem;
+}
+
 /* CSS */
 
-p {
-  color: blue;
-}
+  .repetindo {
+    width: 300px;                   
+    height: 200px;                  
+    background-image: url(./assets/img/css/css-2.png);
+    background-repeat: repeat;      
+    border: 2px solid #333;         
+  }
 
-button {
-  background-color: rgb(150, 88, 212);
-}
+  .semRepetir {
+    width: 300px;
+    height: 200px;
+    background-image: url(./assets/img/css/css-2.png);
+    background-repeat: no-repeat;
+    border: 2px solid #333;
+  }
 
