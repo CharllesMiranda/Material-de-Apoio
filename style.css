@@ -11,6 +11,7 @@ section {
   margin: 1rem;
   padding: 0.5rem;
 }
+
 section img {
   max-width: 100%;
   display: block;
@@ -27,7 +28,36 @@ header {
 
 /* CSS */
 
-.fonte {
-  font-family: Arial, Helvetica, sans-serif;
+.exemplo {
+  max-width: 400px;
+  width: 200px;
+  background-color: lightblue;
+  margin-bottom: 10px;
+  color: #000;
 }
 
+.px {
+  width: 200px;
+  font-size: 16px;
+}
+
+.porcentagem {
+  width: 50%;
+  font-size: 120%;
+}
+
+.em {
+  font-size: 2em;
+}
+
+.rem {
+  font-size: 1.5rem;
+}
+
+.vh {
+  height: 20vh;
+}
+
+.vw {
+  width: 80vw;
+}
