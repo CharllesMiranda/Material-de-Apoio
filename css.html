@@ -423,26 +423,6 @@
 
                 <section>
                     <details>
-                        <summary>🔹 </summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> </li>
-                            <li><strong>Quando usar:</strong> </li>
-                            <li><strong>Exemplo:</strong> </li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-" alt="">
-                        <img src="./assets/img/css/codigo-" alt="">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-" alt="">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
                         <summary>🔹 Propriedade font-size</summary>
 
                         <ul>
@@ -621,53 +601,233 @@
 
             </fieldset>
 
-                <fieldset>
-                    <legend>📌 Unidades de Medida (CSS)</legend>
+            <fieldset>
+                <legend>📌 Unidades de Medida (CSS)</legend>
 
-                        <section>
-                            <details>
-                                <summary>🔹 Unidades de Medida</summary>
+                <section>
+                    <details>
+                        <summary>🔹 Unidades de Medida</summary>
 
+                        <ul>
+                            <li><strong>O que é:</strong> São as unidades usadas para definir tamanhos no CSS, como
+                                largura, altura, fontes, margens e espaçamentos.</li>
+                            <li><strong>Quando usar:</strong> Sempre que precisar definir tamanhos de forma fixa
+                                (absoluta) ou adaptável (relativa) no seu layout.</li>
+                            <li><strong>Exemplo:</strong> px, %, em, rem, vh, vw, etc.</li>
+                        </ul>
+
+                        <h3>💻 Exemplos de Unidades</h3>
+                        <ul>
+                            <li><strong>px (pixels):</strong> Unidade absoluta mais comum. Ex.:
+                                <code>font-size: 16px;</code>
+                            </li>
+                            <li><strong>% (porcentagem):</strong> Relativa ao elemento pai. Ex.:
+                                <code>width: 50%;</code>
+                            </li>
+                            <li><strong>em:</strong> Relativa ao tamanho da fonte do elemento pai. Ex.:
+                                <code>padding: 2em;</code>
+                            </li>
+                            <li><strong>rem:</strong> Relativa ao tamanho da fonte raiz (html). Ex.:
+                                <code>margin: 1.5rem;</code>
+                            </li>
+                            <li><strong>vh (viewport height):</strong> Relativa à altura da janela do navegador. Ex.:
+                                <code>height: 50vh;</code>
+                            </li>
+                            <li><strong>vw (viewport width):</strong> Relativa à largura da janela do navegador. Ex.:
+                                <code>width: 80vw;</code>
+                            </li>
+                            <li><strong>vmin/vmax:</strong> Relativas ao menor ou maior valor entre largura e altura do
+                                viewport.</li>
+                            <li><strong>cm / mm / in:</strong> Unidades físicas (centímetro, milímetro, polegada) —
+                                raramente usadas na tela.</li>
+                        </ul>
+
+                        <h3>💻 Exemplo de código</h3>
+                        <img src="./assets/img/css/codigo-html-medida.png"
+                            alt="Exemplo de código HTML para unidades de medida">
+                        <img src="./assets/img/css/codigo-medida.png"
+                            alt="Exemplo de código CSS para unidades de medida">
+
+                        <h3>🖥️ Resultado no navegador</h3>
+                        <img src="./assets/img/css/navegador-medida.png"
+                            alt="Resultado das unidades de medida no navegador">
+
+                    </details>
+                </section>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>📌 Display Padrão no CSS</legend>
+
+                <section>
+                    <details>
+                        <summary>🔹 Display Flex (Flexbox)</summary>
+
+                        <ul>
+                            <li><strong>O que é:</strong> O <strong>display: flex;</strong> transforma um elemento em um
+                                <em>container flexível</em>, permitindo organizar seus filhos (itens) em linha ou coluna
+                                de forma prática.
+                            </li>
+                            <li><strong>Quando usar:</strong> Para alinhar, distribuir espaço ou organizar itens em
+                                layouts responsivos (menus, cards, caixas lado a lado, centralização na tela, etc.).
+                            </li>
+                            <li><strong>Exemplo:</strong> Centralizar elementos na tela, criar menus horizontais,
+                                dividir espaço igualmente entre caixas.</li>
+                        </ul>
+
+                        <h3>💻 Exemplo de código</h3>
+                        <img src="./assets/img/css/codigo-html-display-flex.png"
+                            alt="Exemplo de código HTML para display flex">
+                        <img src="./assets/img/css/codigo-display-flex.png"
+                            alt="Exemplo de código CSS para display flex">
+
+                        <h3>🖥️ Resultado no navegador</h3>
+                        <img src="./assets/img/css/navegador-display-flex.png"
+                            alt="Resultado do display flex no navegador">
+
+                    </details>
+                </section>
+
+                <section>
+                    <details>
+                        <summary>🔹 Container Flex</summary>
+
+                        <ul>
+                            <li><strong>O que é:</strong> As propriedades do <strong>container flex </strong> controlam
+                                como os itens são distribuídos e alinhados dentro do container.</li>
+                            <li><strong>Quando usar:</strong> você usa essas propriedades quando quer que os elementos
+                                internos se comportem de forma flexível (em linha, em coluna, alinhados, espaçados,
+                                etc.).</li>
+                        </ul>
+
+                        <h3>Abaixo os itens que podem ser usados com display flex</h3>
+
+                        <details>
+                            <summary>🔹 Flex-direction</summary>
+
+                            <ul>
+                                <li>Define a direção dos itens dentro do container.</li>
+                                <li><strong>row → </strong>Itens na horizontal (padrão)</li>
+                                <li><strong>row-reverse → </strong>Horizontal invertida</li>
+                                <li><strong>column → </strong>Vertical</li>
+                                <li><strong>column-reverse → </strong>Vertical invertida</li>
+                            </ul>
+
+                            <h3>💻 Exemplo de código</h3>
+                            <img src="./assets/img/css/codigo-html-flex-direction.png" alt="">
+                            <img src="./assets/img/css/codigo-flex-direction.png" alt="">
+
+                            <h3>🖥️ Resultado no navegador</h3>
+                            <img src="./assets/img/css/navegador-flex-direction.png" alt="">
+
+                        </details>
+
+                        <details>
+                            <summary>🔹 justify-content</summary>
+
+                            <ul>
+                                <li>Define o alinhamento horizontal dos itens no eixo principal (dependendo da direção do flex).</li>
+                                <li><strong>flex-start → </strong>Alinhados à esquerda/topo</li>
+                                <li><strong>flex-end → </strong>Alinhados à direita/fundo</li>
+                                <li><strong>center → </strong>Centralizados</li>
+                                <li><strong>space-between → </strong>Espaço igual entre os itens</li>
+                                <li><strong>space-around → </strong>Espaço igual ao redor dos itens</li>
+                                <li><strong>space-evenly → </strong>Espaço igual entre e ao redor</li>
+                            </ul>
+
+                            <h3>💻 Exemplo de código</h3>
+                            <img src="./assets/img/css/codigo-html-justify-content.png" alt="">
+                            <img src="./assets/img/css/codigo-justify-content.png" alt="">
+
+                            <h3>🖥️ Resultado no navegador</h3>
+                            <img src="./assets/img/css/navegador-justify-content.png" alt="">
+
+                        </details>
+
+                        <details>
+                            <summary>🔹 align-items</summary>
+
+                            <ul>
+                                <li>Define o alinhamento vertical dos itens no eixo cruzado (perpendicular à direção do flex).</li>
+                                <li><strong>flex-start → </strong>Alinhados ao topo/início do container</li>
+                                <li>flex-end → <strong></strong>Alinhados ao fundo/fim do container</li>
+                                <li><strong>center → </strong>Centralizados verticalmente</li>
+                                <li><strong>stretch → </strong>Esticam para preencher toda a altura do container (padrão)</li>
+                                <li><strong>baseline → </strong>Alinhados pela linha de base do texto</li>
+                            </ul>
+
+                            <h3>💻 Exemplo de código</h3>
+                            <img src="./assets/img/css/codigo-html-align-items.png" alt="">
+                            <img src="./assets/img/css/codigo-align-items.png" alt="">
+
+                            <h3>🖥️ Resultado no navegador</h3>
+                            <img src="./assets/img/css/navegador-align-items.png" alt="">
+                            <img src="./assets/img/css/navegador-align-items-2.png" alt="">
+
+                        </details>
+
+                        <details>
+                            <summary>🔹 align-content</summary>
+
+                            <ul>
+                                <li>Afeta múltiplas linhas de itens quando flex-wrap é usado. Controla o espaço entre as linhas.</li>
+                                <li><strong>flex-start → </strong>Linhas alinhadas ao topo/início</li>
+                                <li><strong>flex-end → </strong>Linhas alinhadas ao fundo/fim</li>
+                                <li><strong>center → </strong>Linhas centralizadas</li>
+                                <li><strong>space-between → </strong>Espaço igual entre as linhas</li>
+                                <li><strong>space-around → </strong>Espaço igual ao redor das linhas</li>
+                                <li><strong>stretch → </strong>Linhas esticam para preencher todo o container (padrão)</li>
+                            </ul>
+
+                            <h3>💻 Exemplo de código</h3>
+                            <img src="./assets/img/css/codigo-html-align-content.png" alt="">
+                            <img src="./assets/img/css/codigo-align-content.png" alt="">
+
+                            <h3>🖥️ Resultado no navegador</h3>
+                            <img src="./assets/img/css/navegador-align-content.png" alt="">
+
+                        </details>
+
+                    </details>
+                </section>
+
+                <section>
+                    <details>
+                        <summary>🔹 Block / Inline / Inline-block / None</summary>
+
+                        <ul>
+                            <li><strong>O que é:</strong> A propriedade <strong>display</strong> define como um elemento
+                                é
+                                exibido na página.</li>
+                            <li><strong>Quando usar:</strong> Sempre que precisar controlar se o elemento ocupa toda a
+                                linha, se fica ao lado de outros ou se deve desaparecer.</li>
+                            <li><strong>Exemplo:</strong>
                                 <ul>
-                                    <li><strong>O que é:</strong> São as unidades usadas para definir tamanhos no CSS, como
-                                        largura, altura, fontes, margens e espaçamentos.</li>
-                                    <li><strong>Quando usar:</strong> Sempre que precisar definir tamanhos de forma fixa
-                                        (absoluta) ou adaptável (relativa) no seu layout.</li>
-                                    <li><strong>Exemplo:</strong> px, %, em, rem, vh, vw, etc.</li>
+                                    <li><strong>block</strong> → O elemento ocupa toda a largura disponível (ex.:
+                                        &lt;div&gt;, &lt;p&gt;).</li>
+                                    <li><strong>inline</strong> → O elemento ocupa apenas o espaço do conteúdo e fica na
+                                        mesma linha (ex.: &lt;span&gt;, &lt;a&gt;).</li>
+                                    <li><strong>inline-block</strong> → Mistura os dois: fica na mesma linha, mas
+                                        permite
+                                        definir largura/altura.</li>
+                                    <li><strong>none</strong> → O elemento não é exibido na tela.</li>
                                 </ul>
+                            </li>
+                        </ul>
 
-                                <h3>💻 Exemplos de Unidades</h3>
-                                <ul>
-                                    <li><strong>px (pixels):</strong> Unidade absoluta mais comum. Ex.:
-                                        <code>font-size: 16px;</code></li>
-                                    <li><strong>% (porcentagem):</strong> Relativa ao elemento pai. Ex.:
-                                        <code>width: 50%;</code></li>
-                                    <li><strong>em:</strong> Relativa ao tamanho da fonte do elemento pai. Ex.:
-                                        <code>padding: 2em;</code></li>
-                                    <li><strong>rem:</strong> Relativa ao tamanho da fonte raiz (html). Ex.:
-                                        <code>margin: 1.5rem;</code></li>
-                                    <li><strong>vh (viewport height):</strong> Relativa à altura da janela do navegador. Ex.:
-                                        <code>height: 50vh;</code></li>
-                                    <li><strong>vw (viewport width):</strong> Relativa à largura da janela do navegador. Ex.:
-                                        <code>width: 80vw;</code></li>
-                                    <li><strong>vmin/vmax:</strong> Relativas ao menor ou maior valor entre largura e altura do
-                                        viewport.</li>
-                                    <li><strong>cm / mm / in:</strong> Unidades físicas (centímetro, milímetro, polegada) —
-                                        raramente usadas na tela.</li>
-                                </ul>
+                        <h3>💻 Exemplo de código</h3>
+                        <img src="./assets/img/css/codigo-html-display.png"
+                            alt="Exemplo de código HTML para display block, inline, inline-block e none">
+                        <img src="./assets/img/css/codigo-display.png"
+                            alt="Exemplo de código CSS para display block, inline, inline-block e none">
 
-                                <h3>💻 Exemplo de código</h3>
-                                <img src="./assets/img/css/codigo-html-medida.png"
-                                    alt="Exemplo de código HTML para unidades de medida">
-                                <img src="./assets/img/css/codigo-medida.png"
-                                    alt="Exemplo de código CSS para unidades de medida">
+                        <h3>🖥️ Resultado no navegador</h3>
+                        <img src="./assets/img/css/navegador-display.png"
+                            alt="Resultado dos valores block, inline, inline-block e none no navegador">
 
-                                <h3>🖥️ Resultado no navegador</h3>
-                                <img src="./assets/img/css/navegador-medida.png"
-                                    alt="Resultado das unidades de medida no navegador">
-
-                            </details>
-                        </section>
+                    </details>
+                </section>
 
             </fieldset>
 
