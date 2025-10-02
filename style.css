@@ -1,9 +1,10 @@
 /* CSS */
 
-/* * {
+* {
+  /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
-} */
+}
 
 section {
   border: 2px solid #333;
@@ -28,32 +29,45 @@ header {
 
 /* CSS */
 
-.container-1 {
-  display: flex;
-  align-content: flex-start;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0b0b;
+  /* fundo escuro como seu portfólio */
+  color: #ffa500;
+  /* texto laranja */
+  padding: 20px;
 }
 
-.container-2 {
+.titulo {
   display: flex;
-  align-content: flex-end;
+  justify-content: center;
 }
 
-.container-3 {
-  display: flex;
-  align-content: center;
+/* Container grid */
+
+/* CSS */
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  background: #1e1e1e;
+  border-radius: 10px;
+
+  /* ---------- Repeat ---------- */
+  grid-template-columns: repeat(3, 100px 60px);
+  /* Repete 3 vezes esse padrão:
+   100px 60px 100px 60px 100px 60px */
 }
 
-.container-4 {
-  display: flex;
-  align-content: space-between;
-}
-
-.container-5 {
-  display: flex;
-  align-content: space-around;
-}
-
-.container-6 {
-  display: flex;
-  align-content: stretch;
+/* Itens */
+.item {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
 }
