@@ -32,42 +32,48 @@ header {
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #0b0b0b;
-  /* fundo escuro como seu portfólio */
   color: #ffa500;
-  /* texto laranja */
   padding: 20px;
 }
 
-.titulo {
+h1, p {
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }
 
-/* Container grid */
+/* Estilo base dos grids */
+.grid-container {
+  display: grid;
+  gap: 10px;
+  margin: 15px 0 30px 0;
+  padding: 10px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  min-height: 80px;
+}
 
 /* CSS */
 
-.grid-container {
+.grid-container-rows {
   display: grid;
   gap: 10px;
   margin-top: 20px;
   padding: 10px;
+  height: 200px;
   background: #1e1e1e;
   border-radius: 10px;
 
-  /* ---------- Repeat ---------- */
-  grid-template-columns: repeat(3, 100px 60px);
-  /* Repete 3 vezes esse padrão:
-   100px 60px 100px 60px 100px 60px */
+  grid-template-rows: 1fr 2fr; 
+  /* Primeira linha ocupa 1 parte, segunda ocupa 2 */
 }
 
-/* Itens */
 .item {
   background: #333;
   color: #fff;
-  text-align: center;
-  padding: 20px;
-  border-radius: 6px;
   font-weight: bold;
-  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
 }

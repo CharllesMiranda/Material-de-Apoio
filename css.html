@@ -836,74 +836,133 @@
 
                 <section>
                     <details>
+                        <summary>🔹 O que é a medida fr no Grid?</summary>
+                        <ul>
+                            <li>A unidade <code>fr</code> significa <strong>fração</strong>.</li>
+                            <li>Ela divide o <strong>espaço disponível</strong> em partes iguais ou proporcionais.</li>
+                            <li>Diferente do <code>px</code> que é fixo, o <code>fr</code> é <strong>flexível</strong> e
+                                se adapta ao tamanho da tela.</li>
+                        </ul>
+
+                        <h3>Exemplo</h3>
+                        <p>Se temos <code>grid-template-columns: 1fr 1fr;</code> significa que o espaço é dividido em 2
+                            colunas iguais.</p>
+                        <p>Já em <code>grid-template-columns: 2fr 1fr;</code> a primeira coluna ocupa o dobro de espaço
+                            da segunda</p>
+
+                        <h3>💻 Exemplo de código</h3>
+                        <img src="./assets/img/css/codigo-fr.png" alt="Exemplo grid com 2 colunas 1fr e 1fr" />
+
+                        <h3>🖥️ Resultado no navegador</h3>
+                        <img src="./assets/img/css/navegador-fr.png"
+                            alt="Exemplo grid com 2 colunas, uma 2fr e outra 1fr" />
+                    </details>
+                </section>
+
+
+                <section>
+                    <details>
                         <summary>🔹 Display Grid</summary>
                         <ul>
                             <li>O <strong>display: grid;</strong> transforma um elemento em um <strong>container de
-                                    grade</strong>. Dentro desse container, os elementos filhos se tornam <strong>itens da grade</strong>.</li>
+                                    grade</strong>. Dentro desse container, os elementos filhos se tornam <strong>itens
+                                    da grade</strong>.</li>
                             <li>Permite organizar os elementos em <strong>linhas e colunas</strong>, de forma muito
                                 flexível.</li>
                         </ul>
 
-                        <h3>💻 Código HTML usado para todos os Exemplos a seguir</h3>
-                        <img src="./assets/img/css/codigo-html-grid-template.png"
-                            alt="">
+                        <details>
+                            <summary>🔹 grid-template-columns</summary>
 
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-grid-tamanho-fixo.png"
-                            alt="">
+                            <h3>💻 Código HTML usado para todos os Exemplos a seguir</h3>
+                            <img src="./assets/img/css/codigo-html-grid-template.png" alt="">
 
-                        <h3>🖥️ Resultados no navegador</h3>
-                        <img src="./assets/img/css/navegador-grid-tamanho-fixo.png"
-                            alt="">
+                            <h3>💻 Exemplo de código tamanho fixo</h3>
+                            <img src="./assets/img/css/codigo-grid-tamanho-fixo.png" alt="">
 
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-grid-fracoes.png"
-                            alt="">
+                            <h3>🖥️ Resultados no navegador</h3>
+                            <img src="./assets/img/css/navegador-grid-tamanho-fixo.png" alt="">
 
-                        <h3>🖥️ Resultados no navegador</h3>
-                        <img src="./assets/img/css/navegador-grid-fracoes.png"
-                            alt="">
+                            <h3>💻 Exemplo de código de frações</h3>
+                            <img src="./assets/img/css/codigo-grid-fracoes.png" alt="">
 
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-grid-linhas.png"
-                            alt="">
+                            <h3>🖥️ Resultados no navegador</h3>
+                            <img src="./assets/img/css/navegador-grid-fracoes.png" alt="">
 
-                        <h3>🖥️ Resultados no navegador</h3>
-                        <img src="./assets/img/css/navegador-grid-linhas.png"
-                            alt="">
-                        
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-grid-repeat.png"
-                            alt="">
+                            <h3>💻 Exemplo de código de linhas</h3>
+                            <img src="./assets/img/css/codigo-grid-linhas.png" alt="">
 
-                        <h3>🖥️ Resultados no navegador</h3>
-                        <img src="./assets/img/css/navegador-grid-repeat.png"
-                            alt="">
-                        
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-grid-repeat2.png"
-                            alt="">
+                            <h3>🖥️ Resultados no navegador</h3>
+                            <img src="./assets/img/css/navegador-grid-linhas.png" alt="">
 
-                        <h3>🖥️ Resultados no navegador</h3>
-                        <img src="./assets/img/css/navegador-grid-repeat2.png"
-                            alt="">
-                        
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-grid-repeat3.png"
-                            alt="">
+                            <h3>💻 Exemplo de código repeat</h3>
+                            <img src="./assets/img/css/codigo-grid-repeat.png" alt="">
 
-                        <h3>🖥️ Resultados no navegador</h3>
-                        <img src="./assets/img/css/navegador-grid-repeat3.png"
-                            alt="">
-                        
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-grid-"
-                            alt="">
+                            <h3>🖥️ Resultados no navegador</h3>
+                            <img src="./assets/img/css/navegador-grid-repeat.png" alt="">
 
-                        <h3>🖥️ Resultados no navegador</h3>
-                        <img src="./assets/img/css/navegador-grid-"
-                            alt="">
-                        
+                            <h3>💻 Exemplo de código repeat</h3>
+                            <img src="./assets/img/css/codigo-grid-repeat2.png" alt="">
+
+                            <h3>🖥️ Resultados no navegador</h3>
+                            <img src="./assets/img/css/navegador-grid-repeat2.png" alt="">
+
+                            <h3>💻 Exemplo de código repeat</h3>
+                            <img src="./assets/img/css/codigo-grid-repeat3.png" alt="">
+
+                            <h3>🖥️ Resultados no navegador</h3>
+                            <img src="./assets/img/css/navegador-grid-repeat3.png" alt="">
+
+                            <h3>💻 Exemplo de código aoto-fill</h3>
+                            <img src="./assets/img/css/codigo-grid-auto-fill.png" alt="">
+
+                            <h3>🖥️ Resultados no navegador</h3>
+                            <img src="./assets/img/css/navegador-grid-auto-fill.png" alt="">
+
+                            <h3>💻 Exemplo de código auto-fit</h3>
+                            <img src="./assets/img/css/codigo-grid-auto-fit.png" alt="">
+
+                            <h3>🖥️ Resultados no navegador</h3>
+                            <img src="./assets/img/css/navegador-grid-auto-fit.png" alt="">
+
+                            <h3>💻 Exemplo de código min-content</h3>
+                            <img src="./assets/img/css/codigo-grid-min-content.png" alt="">
+
+                            <h3>🖥️ Resultados no navegador</h3>
+                            <img src="./assets/img/css/navegador-grid-min-content.png" alt="">
+
+                            <h3>💻 Exemplo de código max-content</h3>
+                            <img src="./assets/img/css/codigo-grid-max-content.png" alt="">
+
+                            <h3>🖥️ Resultados no navegador</h3>
+                            <img src="./assets/img/css/navegador-grid-max-content.png" alt="">
+
+                            <h3>💻 Exemplo de código auto</h3>
+                            <img src="./assets/img/css/codigo-grid-auto.png" alt="">
+
+                            <h3>🖥️ Resultados no navegador</h3>
+                            <img src="./assets/img/css/navegador-grid-auto.png" alt="">
+
+                        </details>
+
+                        <details>
+                            <summary>🔹 grid-template-rows</summary>
+                            <ul>
+                                <li>Assim como usamos grid-template-columns para dividir o espaço em colunas, também
+                                    podemos usar grid-template-rows para dividir o espaço em linhas.</li>
+                                <li>A lógica é a mesma: podemos usar px, %, auto ou fr para definir os tamanhos.</li>
+                            </ul>
+
+                            <h3>💻 Exemplo de código</h3>
+                            <img src="./assets/img/css/codigo-html-grid-template-rows.png"
+                                alt="Exemplo de código HTML para display block, inline, inline-block e none">
+                            <img src="./assets/img/css/codigo-grid-template-rows.png"
+                                alt="Exemplo de código CSS para display block, inline, inline-block e none">
+
+                            <h3>🖥️ Resultado no navegador</h3>
+                            <img src="./assets/img/css/navegador-grid-template-rows.png"
+                                alt="Resultado dos valores block, inline, inline-block e none no navegador">
+                        </details>
 
                     </details>
                 </section>
