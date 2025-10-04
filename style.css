@@ -23,7 +23,7 @@ section img {
   height: auto;
 }
 
-header {
+nav {
   margin-bottom: 3rem;
 }
 
@@ -42,7 +42,8 @@ h1, p {
   justify-content: center;
 }
 
-/* Estilo base dos grids */
+
+/* 
 .grid-container {
   display: grid;
   gap: 10px;
@@ -53,7 +54,7 @@ h1, p {
   min-height: 80px;
 }
 
-/* CSS */
+
 
 .grid-container-rows {
   display: grid;
@@ -65,15 +66,63 @@ h1, p {
   border-radius: 10px;
 
   grid-template-rows: 1fr 2fr; 
-  /* Primeira linha ocupa 1 parte, segunda ocupa 2 */
-}
+  
+} */
 
-.item {
-  background: #333;
-  color: #fff;
-  font-weight: bold;
+/* CSS */
+
+/* Essa parte é apenas estilização */
+
+.grid-areas > * {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  font-weight: bold;
   border-radius: 5px;
 }
+
+.grid-areas {
+  gap: 10px;
+  height: 300px;
+  background: #1e1e1e;
+  padding: 10px;
+  border-radius: 10px;
+
+  display: grid; /*Daqui em diante é para usar o grid-template-areas*/
+  grid-template-columns: 1fr 2fr;   /* Coluna 1 menor, coluna 2 maior */
+  grid-template-rows: 60px 1fr 40px; /* Altura do header, conteúdo, footer */
+  grid-template-areas: 
+    "header header"     /* header ocupa 2 colunas na primeira linha*/
+    "aside  main"       /* aside fica na 1ª coluna e main na 2ª coluna*/
+    "footer footer";    /* o footer ocupa 2 colunas na última linha*/
+}
+
+/* Definindo a área do cabeçalho e aplicando cor de fundo */
+.header {
+  grid-area: header; 
+  background: #ff9800;
+}
+
+/* Definindo a área da barra lateral e aplicando cor de fundo */
+.aside {
+  grid-area: aside;  
+  background: #f44336;
+}
+
+/* Definindo a área principal e aplicando cor de fundo */
+.main {
+  grid-area: main;   
+  background: #4caf50;
+}
+
+/* Definindo a área do rodapé e aplicando cor de fundo */
+.footer {
+  grid-area: footer; 
+  background: #2196f3;
+}
+
+
+
+
+
