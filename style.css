@@ -29,29 +29,98 @@ nav {
 
 /* CSS */
 
-.container {
-  border: 1px solid black;
-  width: 150px;
-  padding: 10px   20px     30px    40px;    /*Atalho ordem do Relógio*/
-      /*   Cima   Direita  Baixo  Esquerda  /*
-
-  /*
-    Outras maneiras de usar padding:
-
-    padding: 20px;  Essa forma aplica para todos os lados
-
-    padding-top: 10px;      Aplica só em cima
-    padding-right: 20px;    Aplica só na diteita
-    padding-bottom: 30px;   Aplica só em baixo
-    padding-left: 40px;     Aplica só na esqueda
-  */
+.exemplo-background {
+  display: grid;
+  gap: 1rem;
+  padding: 20px;
+  color: white;
+  text-align: center;
 }
 
-.box {
-  background-color: aqua;
-  width: 100px;
-  height: 100px;
+.caixa {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 10px;
 }
+
+.title {
+  background-color: black;
+  border-radius: 2rem;
+  margin-top: 20px;
+}
+
+/* 1️⃣ background-color */
+/* Define a cor de fundo do elemento. */
+.caixa1 {
+  background-color: orange;
+}
+
+/* 2️⃣ background-image */
+/* Define uma imagem de fundo. */
+.caixa2 {
+  background-image: url('./assets/img/css/fundo1.png');
+  background-size: cover;
+}
+
+/* 3️⃣ background-repeat */
+/* Controla se a imagem vai repetir ou não. */
+/*
+  repeat → repete (padrão)
+  no-repeat → não repete
+  repeat-x → repete só na horizontal
+  repeat-y → repete só na vertical
+*/
+.caixa3 {
+  background-image: url('./assets/img/css/padrao.png');
+  background-repeat: repeat-x;
+  background-color: #222;
+}
+
+/* 4️⃣ background-size */
+/* Controla o tamanho da imagem de fundo. */
+/*
+  cover → cobre toda a área (mesmo cortando um pouco)
+  contain → mostra a imagem inteira, mesmo se sobrar espaço
+*/
+.caixa4 {
+  background-image: url('./assets/img/css/fundo3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+}
+
+/* 5️⃣ background-position */
+/* Define onde a imagem fica posicionada. */
+/*
+  top, bottom, left, right, center
+  Ou valores: 50% 50%, 10px 20px
+*/
+.caixa5 {
+  background-image: url('./assets/img/css/fundo4.png');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: #111;
+}
+
+/* 6️⃣ background-attachment */
+/* Controla se a imagem rola junto com a página ou fica fixa. */
+.caixa6 {
+  background-image: url('./assets/img/css/padrao.png');
+  background-size: cover;
+  background-attachment: fixed; /* Efeito de paralaxe */
+}
+
+/* 7️⃣ Gradiente */
+/* Você também pode criar fundos com degradê: */
+.caixa7 {
+  background: linear-gradient(to right, orange, red);
+}
+
 
 
 
