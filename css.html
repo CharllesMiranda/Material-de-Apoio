@@ -1352,6 +1352,143 @@
                     </details>
                 </section>
 
+                <section>
+                    <details>
+                        <summary>🔹 Transition e Transform</summary>
+
+                        <ul>
+                            <li><strong>Transition:</strong> Usada para criar efeitos suaves quando algo muda em um elemento 
+                                (como cor, tamanho ou posição).</li>
+                            <li><strong>Quando usar:</strong> Sempre que quiser deixar a mudança de estilo animada, em vez de 
+                                instantânea (por exemplo, em :hover).</li>
+                            
+                            <li><strong>Transform:</strong> Usada para mover, girar, aumentar ou diminuir elementos.</li>
+                            <li><strong>Quando usar:</strong> Quando quiser alterar a forma ou posição de um elemento 
+                                visualmente (sem afetar o layout ao redor).</li>
+                        </ul>
+
+                        <h3>💻 Exemplo de código</h3>
+                        <img src="./assets/img/css/codigo-html-transition-transform.png"
+                            alt="Exemplo de código HTML para display flex">
+                        <img src="./assets/img/css/codigo-transition-transform.png" alt="Exemplo de código CSS para display flex">
+
+                        <h3>🖥️ Resultado no navegador</h3>
+                        <video src="./assets/gif/navegador-transition-transform.gif" autoplay loop muted alt="Video demonstrativo de transition e tranform">
+
+                    </details>
+                </section>
+
+                <section>
+                    <details>
+                        <summary>🔹 Position</summary>
+
+                        <ul>
+                            <li><strong>Static:</strong> Padrão. O elemento segue o fluxo normal da página.</li>
+                            <li><strong>Quando usar:</strong> Quando não precisa de posicionamento especial.</li>
+                            
+                            <li><strong>Relative:</strong> Permite mover o elemento em relação à sua posição original.</li>
+                            <li><strong>Quando usar:</strong> Quando quer ajustar algo levemente sem tirá-lo do fluxo.</li>
+                            
+                            <li><strong>Absolute:</strong> Posiciona em relação ao ancestral mais próximo com posição definida (ou ao body).</li>
+                            <li><strong>Quando usar:</strong> Quando quer um item fixo dentro de uma área específica.</li>
+                            
+                            <li><strong>fixed:</strong> Fica fixo na tela, mesmo rolando a página</li>
+                            <li><strong>Quando usar:</strong> Ideal para menus fixos, botões flutuantes, etc.</li>
+                            
+                            <li><strong>Sticky:</strong> Fica normal até atingir um ponto e depois “gruda” na tela.</li>
+                            <li><strong>Quando usar:</strong> Usado para cabeçalhos ou menus que grudam ao rolar.</li>
+                        </ul>
+
+                        <h3>💻 Exemplo de código</h3>
+                        <img src="./assets/img/css/codigo-html-position.png"
+                            alt="Exemplo de código HTML para display flex">
+                        <img src="./assets/img/css/codigo-position.png" alt="Exemplo de código CSS para display flex">
+
+                        <h3>🖥️ Resultado no navegador</h3>
+                         <img src="./assets/img/css/navegador-position.png" alt="Exemplo de código CSS para display flex">
+
+                    </details>
+                </section>
+
+                <section>
+                    <details>
+                        <summary>🔹 Z-index</summary>
+
+                        <ul>
+                            <li><strong>O que é:</strong> A propriedade z-index define a ordem de empilhamento 
+                                (camadas) dos elementos que se sobrepõem na tela.</li>
+                            <li><strong>Quando usar:</strong> Quando quiser definir quem aparece na frente e quem fica atrás.</li>
+                            <li><strong>Como funciona:</strong>
+                                <li>Quanto maior o valor do z-index, mais à frente o elemento aparece.</li>
+                                <li>Quanto menor, mais ao fundo.</li>
+                                <li>Só funciona em elementos que têm um position diferente de static (relative, absolute, fixed, ou sticky).</li>
+                            </li>
+                        </ul>
+
+                        <h3>💻 Exemplo de código</h3>
+                        <img src="./assets/img/css/codigo-html-z-index.png"
+                            alt="Exemplo de código HTML para display flex">
+                        <img src="./assets/img/css/codigo-z-index.png" alt="Exemplo de código CSS para display flex">
+
+                        <h3>🖥️ Resultado no navegador</h3>
+                         <img src="./assets/img/css/navegador-z-index.png" alt="Exemplo de código CSS para display flex">
+
+                    </details>
+                </section>
+
+                <section>
+                    <details>
+                        <summary>🔹 Pseudo-classes e Pseudo-elementos</summary>
+
+                        <ul>
+                            <li><strong>Pseudo-classes (:)</strong> Servem para definir um estilo em um estado específico de um elemento, 
+                                como quando o mouse passa em cima ou o campo está em foco.</li>
+                            <li><strong>Pseudo-classe</strong>
+                                <li><strong>:hover</strong>
+                                    <li><strong>O que faz:</strong> Ativado quando o mouse passa sobre o elemento.</li>
+                                    <li><strong>Quando usar:</strong> Criar efeitos de destaque ou animações.</li>
+                                </li>
+                            
+                                <li><strong>:focus</strong>
+                                    <li><strong>O que faz:</strong> Quando o elemento (geralmente um input) recebe foco.</li>
+                                    <li><strong>Quando usar:</strong> Personalizar campos de formulário quando estão selecionados.</li>
+                                </li>
+
+                                <li><strong>:active</strong>
+                                    <li><strong>O que faz:</strong> Quando o elemento está sendo clicado.</li>
+                                    <li><strong>Quando usar:</strong> Dar feedback visual em botões ou links.</li>
+                                </li>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li><strong>Pseudo-elementos (::)</strong> Usados para criar partes “falsas” dentro de um elemento, 
+                                sem precisar adicionar tags extras no HTML.</li>
+                            <li><strong>Pseudo-elemento</strong>
+
+                                <li><strong>::before</strong>
+                                    <li><strong>O que faz:</strong> Adiciona conteúdo antes do elemento.</li>
+                                    <li><strong>Quando usar:</strong> Criar detalhes visuais, ícones, decorações.</li>
+                                </li>
+                            
+                                <li><strong>::after</strong>
+                                    <li><strong>O que faz:</strong> Adiciona conteúdo depois do elemento.</li>
+                                    <li><strong>Quando usar:</strong> Criar setas, enfeites, efeitos extras.</li>
+                                </li>
+                            </li>
+                        </ul>
+
+                        <h3>💻 Exemplo de código</h3>
+                        <img src="./assets/img/css/codigo-html-pseudo.png"
+                            alt="Exemplo de código HTML para display flex">
+                        <img src="./assets/img/css/codigo-pseudo.png" alt="Exemplo de código CSS para display flex">
+
+                        <h3>🖥️ Resultado no navegador</h3>
+                         <img src="./assets/img/css/navegador-pseudo.png" alt="Exemplo de código CSS para display flex">
+
+                    </details>
+                </section>
+
             </fieldset>
 
     </main>

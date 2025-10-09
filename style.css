@@ -27,39 +27,8 @@ nav {
   margin-bottom: 3rem;
 }
 
+video {
+  width: 300px;
+}
+
 /* CSS */
-
-.caixa {
-  display: flex;
-  width: 150px;
-  height: 50px;
-  margin: 30px;
-}
-
-/* 1️⃣ Sombra simples */
-.caixa1 {
-  background: orange;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-}
-
-/* 2️⃣ Sombra suave */
-.caixa2 {
-  background: red;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
-/* 3️⃣ Sombra interna (inset) */
-.caixa3 {
-  background: rgb(86, 86, 186);
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
-}
-
-/* 4️⃣ Sombra colorida */
-.caixa4 {
-  background: #7f2da4;
-  box-shadow: 0 0 15px orange;
-}
-
-
-
-
