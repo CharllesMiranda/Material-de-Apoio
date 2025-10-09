@@ -29,98 +29,36 @@ nav {
 
 /* CSS */
 
-.exemplo-background {
-  display: grid;
-  gap: 1rem;
-  padding: 20px;
-  color: white;
-  text-align: center;
-}
-
 .caixa {
-  height: 150px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  margin: 30px;
 }
 
-.title {
-  background-color: black;
-  border-radius: 2rem;
-  margin-top: 20px;
-}
-
-/* 1️⃣ background-color */
-/* Define a cor de fundo do elemento. */
+/* 1️⃣ Sombra simples */
 .caixa1 {
-  background-color: orange;
+  background: orange;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 
-/* 2️⃣ background-image */
-/* Define uma imagem de fundo. */
+/* 2️⃣ Sombra suave */
 .caixa2 {
-  background-image: url('./assets/img/css/fundo1.png');
-  background-size: cover;
+  background: red;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
-/* 3️⃣ background-repeat */
-/* Controla se a imagem vai repetir ou não. */
-/*
-  repeat → repete (padrão)
-  no-repeat → não repete
-  repeat-x → repete só na horizontal
-  repeat-y → repete só na vertical
-*/
+/* 3️⃣ Sombra interna (inset) */
 .caixa3 {
-  background-image: url('./assets/img/css/padrao.png');
-  background-repeat: repeat-x;
-  background-color: #222;
+  background: rgb(86, 86, 186);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
 }
 
-/* 4️⃣ background-size */
-/* Controla o tamanho da imagem de fundo. */
-/*
-  cover → cobre toda a área (mesmo cortando um pouco)
-  contain → mostra a imagem inteira, mesmo se sobrar espaço
-*/
+/* 4️⃣ Sombra colorida */
 .caixa4 {
-  background-image: url('./assets/img/css/fundo3.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #000;
+  background: #7f2da4;
+  box-shadow: 0 0 15px orange;
 }
-
-/* 5️⃣ background-position */
-/* Define onde a imagem fica posicionada. */
-/*
-  top, bottom, left, right, center
-  Ou valores: 50% 50%, 10px 20px
-*/
-.caixa5 {
-  background-image: url('./assets/img/css/fundo4.png');
-  background-size: 100px;
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-color: #111;
-}
-
-/* 6️⃣ background-attachment */
-/* Controla se a imagem rola junto com a página ou fica fixa. */
-.caixa6 {
-  background-image: url('./assets/img/css/padrao.png');
-  background-size: cover;
-  background-attachment: fixed; /* Efeito de paralaxe */
-}
-
-/* 7️⃣ Gradiente */
-/* Você também pode criar fundos com degradê: */
-.caixa7 {
-  background: linear-gradient(to right, orange, red);
-}
-
 
 
 
