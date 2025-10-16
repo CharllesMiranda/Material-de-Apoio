@@ -25,1551 +25,1510 @@
 
         <h1>BabyDev Docs</h1>
 
-        <p>“Aprenda HTML e CSS de forma simples e visual”</p>
+        <p class="frase">“Aprenda HTML e CSS de Forma Simples e Visual”</p>
 
-        <fieldset>
-            <legend>📌 Seletores básicos do CSS</legend>
 
-            <section>
+        <legend>📌 Seletores básicos do CSS</legend>
+
+        <section>
+            <details>
+                <summary>🔹 Seletor Universal *</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Seleciona todos os elementos da página.</li>
+                    <li><strong>Quando usar:</strong> Para aplicar um estilo global, por exemplo resetar margens e
+                        paddings padrão do navegador.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-asterisco.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Seletor de Tipo (ou Tag)</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Seleciona todos os elementos de um tipo específico (ex.: p, h1,
+                        div, img).</li>
+                    <li><strong>Quando usar:</strong> Para estilizar todos os elementos de uma tag específica sem
+                        precisar dar classes ou IDs.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-seletor.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                <img src="./assets/img/css/codigo-seletor.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-seletor.png" alt="Resultado do código HTML h1 até h6 no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Seletor de Classe</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Seleciona todos os elementos que têm uma determinada classe.</li>
+                    <li><strong>Quando usar:</strong> Quando você quer aplicar o mesmo estilo em vários elementos
+                        diferentes.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-class.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                <img src="./assets/img/css/codigo-class.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-class.png" alt="Resultado do código HTML h1 até h6 no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Seletor de ID</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Seleciona um elemento único pelo ID.</li>
+                    <li><strong>Quando usar:</strong> Para estilizar um único elemento específico na página.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-id.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                <img src="./assets/img/css/codigo-id.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-id.png" alt="Resultado do código HTML h1 até h6 no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Seletor de Descendência (espaço)</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Seleciona elementos dentro de outro.</li>
+                    <li><strong>Quando usar:</strong> Quando quer aplicar estilos só aos elementos que estão
+                        aninhados dentro de outro.</li>
+                    <li><strong>Exemplo:</strong> div p = todos &lt;p&gt; que estão dentro de uma &lt;div&gt;.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-descendencia.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                <img src="./assets/img/css/codigo-descendencia.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-descendencia.png"
+                    alt="Resultado do código HTML h1 até h6 no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Seletor de Filho Direto (>)</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Seleciona somente os filhos diretos de um elemento.</li>
+                    <li><strong>Quando usar:</strong> Quando quer ter controle só sobre os filhos imediatos, não
+                        sobre netos.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-filho-direto.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                <img src="./assets/img/css/codigo-filho-direto.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-filho-direto.png"
+                    alt="Resultado do código HTML h1 até h6 no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Seletor de Agrupamento (,)</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Aplica o mesmo estilo a vários seletores ao mesmo tempo.</li>
+                    <li><strong>Quando usar:</strong> Para economizar código e aplicar uma regra única a múltiplos
+                        elementos.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-agrupamento.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                <img src="./assets/img/css/codigo-agrupamento.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-agrupamento.png"
+                    alt="Resultado do código HTML h1 até h6 no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Seletor de Atributo</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Seleciona elementos com um atributo específico ou valor
+                        específico.</li>
+                    <li><strong>Quando usar:</strong> Quando quer estilizar elementos conforme seus atributos.</li>
+                    <li><strong>Exemplo:</strong> todos os &lt;input&gt; cujo type é “text”.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-atributo.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                <img src="./assets/img/css/codigo-atributo.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-atributo.png"
+                    alt="Resultado do código HTML h1 até h6 no navegador">
+
+            </details>
+        </section>
+
+        <legend>📌 Cores e Fundos (Background)</legend>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade color</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Define a cor do texto em um elemento.</li>
+                    <li><strong>Quando usar:</strong> Quando você quer alterar a cor padrão do texto para destacar
+                        títulos, links ou qualquer conteúdo textual.</li>
+                    <li><strong>Exemplo:</strong> color: blue; deixa o texto azul.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-color.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                <img src="./assets/img/css/codigo-color.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-color.png" alt="Resultado do código HTML h1 até h6 no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Formas de definir cores </summary>
+
+                <ul>
+                    <li><strong>Nomes de cores:</strong> Como blue, red, green. São limitados, mas fáceis de
+                        lembrar./li>
+                    <li><strong>Hexadecimal:</strong> É o formato mais usado. Ex.: #0000FF (azul). Ele usa 6 dígitos
+                        (ou 3 dígitos abreviados, #00F). Os dois primeiros dígitos são para vermelho, os dois do
+                        meio para verde e os dois últimos para azul (padrão RGB).</li>
+                    <li><strong>RGB:</strong> Define as cores em valores de 0 até 255 para cada canal (vermelho,
+                        verde e azul). Ex.: rgb(0,0,255) (azul).</li>
+                    <li><strong>RGBA:</strong> Igual ao RGB, mas com transparência. O último número vai de 0 até 1
+                        (0 é totalmente transparente e 1 é totalmente opaco). Ex.: rgba(0,0,255,0.5) (azul com 50%
+                        de transparência).</li>
+                    <li><strong>HSL:</strong> Significa Hue (matiz), Saturation (saturação) e Lightness
+                        (luminosidade). Ex.: hsl(240,100%,50%) (azul puro). É ótimo para ajustar tonalidades de
+                        forma mais intuitiva.</li>
+                    <li><strong>HSLA:</strong> Igual ao HSL, mas com transparência no quarto valor. Ex.:
+                        hsla(240,100%,50%,0.5).</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-definir-cores.png" alt="Exemplo de código HTML para color">
+                <img src="./assets/img/css/codigo-definir-cores.png"
+                    alt="Exemplo de código CSS para color em vários formatos">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-definir-cores.png" alt="Resultado das cores no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade background-color</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Define a cor de fundo de um elemento.</li>
+                    <li><strong>Quando usar:</strong> Quando quiser aplicar uma cor de fundo para destacar seções,
+                        caixas, botões etc.</li>
+                    <li><strong>Exemplo:</strong> background-color: lightblue; deixa o fundo azul claro.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-background-color.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                <img src="./assets/img/css/codigo-background-color.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-background-color.png"
+                    alt="Resultado do código HTML h1 até h6 no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade background-image</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Permite usar uma imagem como fundo de um elemento.</li>
+                    <li><strong>Quando usar:</strong> Quando quiser adicionar textura ou imagem de fundo em uma
+                        página ou seção.</li>
+                    <li><strong>Exemplo:</strong> background-image: url(./assets/img/css/css.png); coloca uma imagem
+                        como fundo.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-background-image.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                <img src="./assets/img/css/codigo-background-image.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-background-image.png"
+                    alt="Resultado do código HTML h1 até h6 no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade background-repeat</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Controla se a imagem de fundo será repetida horizontal e/ou
+                        verticalmente.</li>
+                    <li><strong>Quando usar:</strong> Quando quiser evitar repetição da imagem ou personalizar a
+                        forma como ela se repete.</li>
+                    <li><strong>Exemplo:</strong> background-repeat: repeat; faz a imagem se repetir em mosaico
+                        (horizontal e verticalmente) e usando background-repeat: no-repeat; faz a imagem aparecer
+                        apenas uma vez, sem se repetir.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-background-repeat.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                <img src="./assets/img/css/codigo-background-repeat.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-background-repeat.png"
+                    alt="Resultado do código HTML h1 até h6 no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade background-size</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Define o tamanho da imagem de fundo.</li>
+                    <li><strong>Quando usar:</strong> Quando precisar ajustar a imagem para cobrir ou caber dentro
+                        do elemento.</li>
+                    <li><strong>Exemplo:</strong> Cover: a imagem aumenta/diminui para cobrir toda a área, podendo
+                        cortar um pedaço. Contain: a imagem é redimensionada para caber inteira, podendo sobrar
+                        espaço.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-background-size.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                <img src="./assets/img/css/codigo-html-background-size.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-background-size.png"
+                    alt="Resultado do código HTML h1 até h6 no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade background-position</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> A propriedade background-position serve para definir a posição
+                        da imagem de fundo dentro de um elemento. Ela diz onde a imagem de fundo vai aparecer — por
+                        exemplo,
+                        se vai ficar no topo, no centro, à direita, etc.</li>
+                    <li><strong>Quando usar:</strong> Use essa propriedade quando quiser controlar o ponto exato
+                        onde a
+                        imagem de fundo aparece </li>
+                    <li><strong>Exemplo: </strong> background-position: x y;
+                    <li>O primeiro valor (x) indica a posição horizontal (ex: left, center, right ou um valor em
+                        px/%).</li>
+                    <li>O segundo valor (y) indica a posição vertical (ex: top, center, bottom ou um valor em px/%).
+                    </li>
+                    </li>
+
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-background-position.png"
+                    alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-background-position.png"
+                    alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-background-position.png"
+                    alt="Resultado do display flex no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade background-attachment</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> A propriedade background-attachment define como o fundo
+                        (background)
+                        de um elemento se comporta quando a página é rolada (scroll). Em outras palavras, ela
+                        controla
+                        se a imagem de fundo se move junto com o conteúdo ou fica fixa na tela.</li>
+                    <li><strong>Quando usar:</strong> Use essa propriedade quando quiser criar efeitos de rolagem no
+                        fundo.</li>
+                    <li>Deixar o fundo fixo enquanto o conteúdo se move (efeito “parallax”);</li>
+                    <li>Fazer o fundo rolar junto com o texto;</li>
+                    <li>Controlar o comportamento do fundo em elementos com rolagem interna.</li>
+                    <li><strong>Exemplo: </strong> </li>
+
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-background-attachment.png"
+                    alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-background-attachment.png"
+                    alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-background-attachment.png"
+                    alt="Resultado do display flex no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade background: linear-gradient</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> é usada para criar um degradê de cores como fundo — ou seja, uma
+                        transição
+                        suave entre duas ou mais cores.</li>
+                    <li><strong>Quando usar:</strong> Use gradientes quando quiser dar vida ao layout sem depender
+                        de imagens pesadas.
+                        Eles são 100% controláveis pelo CSS e funcionam em qualquer tamanho de tela.
+                    <li>Use para criar fundos coloridos com transição suave (sem precisar de imagem);</li>
+                    <li>Dar profundidade ou destaque visual a botões, seções, headers, etc.;</li>
+                    <li>Substituir imagens de fundo leves, melhorando performance e design responsivo.</li>
+                    </li>
+                    <li><strong>Exemplo: </strong> </li>
+
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-background-linear-gradient.png"
+                    alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-background-linear-gradient.png"
+                    alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-background-linear-gradient.png"
+                    alt="Resultado do display flex no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade opacity</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Controla a transparência de um elemento inteiro.</li>
+                    <li><strong>Quando usar:</strong> Quando quiser dar efeito de transparência, deixando o fundo ou
+                        conteúdo parcialmente visível.</li>
+                    <li><strong>Exemplo:</strong> opacity: 0.5; deixa o elemento 50% transparente.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-opacity.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                <img src="./assets/img/css/codigo-opacity.png"
+                    alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-opacity.png" alt="Resultado do código HTML h1 até h6 no navegador">
+
+            </details>
+        </section>
+
+        <legend>📌 Propriedades de texto</legend>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade font-family</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Define a família de fontes do texto (ex.: Arial, Verdana,
+                        sans-serif, etc.).</li>
+                    <li><strong>Quando usar:</strong> Sempre que quiser alterar ou padronizar a fonte de um
+                        elemento ou página inteira.</li>
+                    <li><strong>Exemplo:</strong> Escolher uma fonte específica ou uma lista de fontes para
+                        fallback caso a principal não esteja disponível.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-font-family.png" alt="Exemplo de código HTML para font-family">
+                <img src="./assets/img/css/codigo-font-family.png" alt="Exemplo de código CSS para font-family">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-font-family.png"
+                    alt="Resultado da propriedade font-family no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade font-size</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Define o tamanho da fonte do texto.</li>
+                    <li><strong>Quando usar:</strong> Sempre que precisar ajustar o tamanho da letra para
+                        melhorar a legibilidade ou criar hierarquia visual.</li>
+                    <li><strong>Exemplo:</strong> Alterar o tamanho do texto de títulos e parágrafos.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-font.png" alt="Exemplo de código HTML para font-size">
+                <img src="./assets/img/css/codigo-font-size.png" alt="Exemplo de código CSS para font-size">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-font-size.png"
+                    alt="Resultado da propriedade font-size no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade font-weight</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Define o peso (espessura) da fonte, podendo ir de normal até
+                        negrito.</li>
+                    <li><strong>Quando usar:</strong> Quando quiser destacar um texto usando negrito ou variar a
+                        espessura da fonte.</li>
+                    <li><strong>Exemplo:</strong> Usar valores como normal, bold, 100, 400, 700 para controlar a
+                        espessura.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-font.png" alt="Exemplo de código HTML para font-weight">
+                <img src="./assets/img/css/codigo-font-weight.png" alt="Exemplo de código CSS para font-weight">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-font-weight.png"
+                    alt="Resultado da propriedade font-weight no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade font-style</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> define o estilo da fonte — ou seja, se o texto será normal,
+                        itálico ou oblíquo (inclinado). Ela muda a aparência da letra, deixando o texto com
+                        um toque mais elegante ou para destacar palavras específicas.</li>
+                    <li><strong>Quando usar:</strong>
+                    <li>Dar ênfase em títulos ou palavras;</li>
+                    <li>Criar estilo mais “leve” ou “sofisticado”;</li>
+                    <li>Destacar frases, citações ou nomes de pessoas.</li>
+                    </li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-font-style.png" alt="Exemplo de código HTML para font-weight">
+                <img src="./assets/img/css/codigo-font-style.png" alt="Exemplo de código CSS para font-weight">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-font-style.png"
+                    alt="Resultado da propriedade font-weight no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade text-align</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Alinha o texto dentro de um elemento (esquerda, direita,
+                        centro, justificado).</li>
+                    <li><strong>Quando usar:</strong> Quando precisar centralizar ou alinhar textos para compor
+                        o layout.</li>
+                    <li><strong>Exemplo:</strong> Usar valores como left, right, center, justify.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-font.png" alt="Exemplo de código HTML para text-align">
+                <img src="./assets/img/css/codigo-text-align.png" alt="Exemplo de código CSS para text-align">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-text-align.png"
+                    alt="Resultado da propriedade text-align no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade text-decoration</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Controla decorações do texto como sublinhado, linha sobreposta
+                        ou nenhuma.</li>
+                    <li><strong>Quando usar:</strong> Para remover sublinhado de links ou criar efeitos em
+                        títulos.</li>
+                    <li><strong>Exemplo:</strong> Valores mais usados: none, underline, overline, line-through.
+                    </li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-font.png" alt="Exemplo de código HTML para text-decoration">
+                <img src="./assets/img/css/codigo-text-decoration.png" alt="Exemplo de código CSS para text-decoration">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-text-decoration.png"
+                    alt="Resultado da propriedade text-decoration no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade text-transform</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Controla a transformação do texto para maiúsculas, minúsculas
+                        ou capitalização automática.</li>
+                    <li><strong>Quando usar:</strong> Quando quiser padronizar a aparência do texto sem precisar
+                        alterar o conteúdo original no HTML.</li>
+                    <li><strong>Exemplo:</strong> Usar valores como uppercase, lowercase, capitalize para mudar
+                        a forma das letras.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-text-transform.png"
+                    alt="Exemplo de código HTML para text-transform">
+                <img src="./assets/img/css/codigo-text-transform.png" alt="Exemplo de código CSS para text-transform">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-text-transform.png"
+                    alt="Resultado da propriedade text-transform no navegador">
+
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade text-shadow</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Adiciona uma sombra ao texto, podendo definir o deslocamento,
+                        desfoque e cor da sombra.</li>
+                    <li><strong>Quando usar:</strong> Usada para destacar textos, criar efeitos visuais sutis ou
+                        títulos com mais profundidade.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-text-shadow.png" alt="Exemplo de código HTML para line-height">
+                <img src="./assets/img/css/codigo-text-shadow.png" alt="Exemplo de código CSS para line-height">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-text-shadow.png"
+                    alt="Resultado da propriedade line-height no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade word-spacing</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Controla o espaçamento entre as palavras de um texto.</li>
+                    <li><strong>Quando usar:</strong> Usada para melhorar a legibilidade, alinhar visualmente
+                        textos em banners, títulos ou parágrafos.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-word-spacing.png"
+                    alt="Exemplo de código HTML para letter-spacing">
+                <img src="./assets/img/css/codigo-word-spacing.png" alt="Exemplo de código CSS para letter-spacing">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-word-spacing.png"
+                    alt="Resultado da propriedade letter-spacing no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade letter-spacing</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Define o espaçamento horizontal entre as letras de um texto.
+                    </li>
+                    <li><strong>Quando usar:</strong> Quando quiser aumentar ou diminuir o espaço entre
+                        caracteres para melhorar a legibilidade ou criar um efeito visual.</li>
+                    <li><strong>Exemplo:</strong> Usar valores positivos para aumentar e negativos para diminuir
+                        o espaçamento.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-letter-spacing.png"
+                    alt="Exemplo de código HTML para letter-spacing">
+                <img src="./assets/img/css/codigo-letter-spacing.png" alt="Exemplo de código CSS para letter-spacing">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-letter-spacing.png"
+                    alt="Resultado da propriedade letter-spacing no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Propriedade line-height</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Define a altura da linha do texto, ou seja, o espaçamento
+                        vertical entre linhas.</li>
+                    <li><strong>Quando usar:</strong> Quando quiser melhorar a legibilidade de parágrafos
+                        ajustando o espaço entre linhas.</li>
+                    <li><strong>Exemplo:</strong> Pode ser definido em números, porcentagem ou unidades (ex.:
+                        1.5, 150%, 24px).</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-line-height.png" alt="Exemplo de código HTML para line-height">
+                <img src="./assets/img/css/codigo-line-height.png" alt="Exemplo de código CSS para line-height">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-line-height.png"
+                    alt="Resultado da propriedade line-height no navegador">
+
+            </details>
+        </section>
+
+        <legend>📌 Unidades de Medida (CSS)</legend>
+
+        <section>
+            <details>
+                <summary>🔹 Absolutas / Relativas</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> São as unidades usadas para definir tamanhos no CSS, como
+                        largura, altura, fontes, margens e espaçamentos.</li>
+                    <li><strong>Quando usar:</strong> Sempre que precisar definir tamanhos de forma fixa
+                        (absoluta) ou adaptável (relativa) no seu layout.</li>
+                    <li><strong>Exemplo:</strong> px, %, em, rem, vh, vw, etc.</li>
+                </ul>
+
+                <h3>💻 Exemplos de Unidades</h3>
+                <ul>
+                    <li><strong>px (pixels):</strong> Unidade absoluta mais comum. Ex.:
+                        <code>font-size: 16px;</code>
+                    </li>
+                    <li><strong>% (porcentagem):</strong> Relativa ao elemento pai. Ex.:
+                        <code>width: 50%;</code>
+                    </li>
+                    <li><strong>em:</strong> Relativa ao tamanho da fonte do elemento pai. Ex.:
+                        <code>padding: 2em;</code>
+                    </li>
+                    <li><strong>rem:</strong> Relativa ao tamanho da fonte raiz (html). Ex.:
+                        <code>margin: 1.5rem;</code>
+                    </li>
+                    <li><strong>vh (viewport height):</strong> Relativa à altura da janela do navegador. Ex.:
+                        <code>height: 50vh;</code>
+                    </li>
+                    <li><strong>vw (viewport width):</strong> Relativa à largura da janela do navegador. Ex.:
+                        <code>width: 80vw;</code>
+                    </li>
+                    <li><strong>vmin/vmax:</strong> Relativas ao menor ou maior valor entre largura e altura do
+                        viewport.</li>
+                    <li><strong>cm / mm / in:</strong> Unidades físicas (centímetro, milímetro, polegada) —
+                        raramente usadas na tela.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-medida.png" alt="Exemplo de código HTML para unidades de medida">
+                <img src="./assets/img/css/codigo-medida.png" alt="Exemplo de código CSS para unidades de medida">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-medida.png" alt="Resultado das unidades de medida no navegador">
+
+            </details>
+        </section>
+
+        <legend>📌 Propriedades de Display e Layout</legend>
+
+        <section>
+            <details>
+                <summary>🔹 Display padrão: block / inline / inline-block / none</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> A propriedade <strong>display</strong> define como um elemento
+                        é
+                        exibido na página.</li>
+                    <li><strong>Quando usar:</strong> Sempre que precisar controlar se o elemento ocupa toda a
+                        linha, se fica ao lado de outros ou se deve desaparecer.</li>
+                    <li><strong>Exemplo:</strong>
+                        <ul>
+                            <li><strong>block</strong> → O elemento ocupa toda a largura disponível (ex.:
+                                &lt;div&gt;, &lt;p&gt;).</li>
+                            <li><strong>inline</strong> → O elemento ocupa apenas o espaço do conteúdo e fica na
+                                mesma linha (ex.: &lt;span&gt;, &lt;a&gt;).</li>
+                            <li><strong>inline-block</strong> → Mistura os dois: fica na mesma linha, mas
+                                permite
+                                definir largura/altura.</li>
+                            <li><strong>none</strong> → O elemento não é exibido na tela.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-display.png"
+                    alt="Exemplo de código HTML para display block, inline, inline-block e none">
+                <img src="./assets/img/css/codigo-display.png"
+                    alt="Exemplo de código CSS para display block, inline, inline-block e none">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-display.png"
+                    alt="Resultado dos valores block, inline, inline-block e none no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Display Flex (Flexbox)</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> O <strong>display: flex;</strong> transforma um elemento em um
+                        <em>container flexível</em>, permitindo organizar seus filhos (itens) em linha ou coluna
+                        de forma prática.
+                    </li>
+                    <li><strong>Quando usar:</strong> Para alinhar, distribuir espaço ou organizar itens em
+                        layouts responsivos (menus, cards, caixas lado a lado, centralização na tela, etc.).
+                    </li>
+                    <li><strong>Exemplo:</strong> Centralizar elementos na tela, criar menus horizontais,
+                        dividir espaço igualmente entre caixas.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-display-flex.png" alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-display-flex.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-display-flex.png" alt="Resultado do display flex no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Container Flex</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> As propriedades do <strong>container flex </strong> controlam
+                        como os itens são distribuídos e alinhados dentro do container.</li>
+                    <li><strong>Quando usar:</strong> você usa essas propriedades quando quer que os elementos
+                        internos se comportem de forma flexível (em linha, em coluna, alinhados, espaçados,
+                        etc.).</li>
+                </ul>
+
+                <h3>Abaixo os itens que podem ser usados com display flex</h3>
+
                 <details>
-                    <summary>🔹 Seletor Universal *</summary>
+                    <summary>🔹 Flex-direction</summary>
 
                     <ul>
-                        <li><strong>O que é:</strong> Seleciona todos os elementos da página.</li>
-                        <li><strong>Quando usar:</strong> Para aplicar um estilo global, por exemplo resetar margens e
-                            paddings padrão do navegador.</li>
+                        <li>Define a direção dos itens dentro do container.</li>
+                        <li><strong>row → </strong>Itens na horizontal (padrão)</li>
+                        <li><strong>row-reverse → </strong>Horizontal invertida</li>
+                        <li><strong>column → </strong>Vertical</li>
+                        <li><strong>column-reverse → </strong>Vertical invertida</li>
                     </ul>
 
                     <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-asterisco.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-
-                </details>
-            </section>
-
-            <section>
-                <details>
-                    <summary>🔹 Seletor de Tipo (ou Tag)</summary>
-
-                    <ul>
-                        <li><strong>O que é:</strong> Seleciona todos os elementos de um tipo específico (ex.: p, h1,
-                            div, img).</li>
-                        <li><strong>Quando usar:</strong> Para estilizar todos os elementos de uma tag específica sem
-                            precisar dar classes ou IDs.</li>
-                    </ul>
-
-                    <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-seletor.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-                    <img src="./assets/img/css/codigo-seletor.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                    <img src="./assets/img/css/codigo-html-flex-direction.png" alt="">
+                    <img src="./assets/img/css/codigo-flex-direction.png" alt="">
 
                     <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-seletor.png"
-                        alt="Resultado do código HTML h1 até h6 no navegador">
+                    <img src="./assets/img/css/navegador-flex-direction.png" alt="">
 
                 </details>
-            </section>
 
-            <section>
                 <details>
-                    <summary>🔹 Seletor de Classe</summary>
+                    <summary>🔹 justify-content</summary>
 
                     <ul>
-                        <li><strong>O que é:</strong> Seleciona todos os elementos que têm uma determinada classe.</li>
-                        <li><strong>Quando usar:</strong> Quando você quer aplicar o mesmo estilo em vários elementos
-                            diferentes.</li>
+                        <li>Define o alinhamento horizontal dos itens no eixo principal (dependendo da direção
+                            do flex).</li>
+                        <li><strong>flex-start → </strong>Alinhados à esquerda/topo</li>
+                        <li><strong>flex-end → </strong>Alinhados à direita/fundo</li>
+                        <li><strong>center → </strong>Centralizados</li>
+                        <li><strong>space-between → </strong>Espaço igual entre os itens</li>
+                        <li><strong>space-around → </strong>Espaço igual ao redor dos itens</li>
+                        <li><strong>space-evenly → </strong>Espaço igual entre e ao redor</li>
                     </ul>
 
                     <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-class.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-                    <img src="./assets/img/css/codigo-class.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                    <img src="./assets/img/css/codigo-html-justify-content.png" alt="">
+                    <img src="./assets/img/css/codigo-justify-content.png" alt="">
 
                     <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-class.png"
-                        alt="Resultado do código HTML h1 até h6 no navegador">
+                    <img src="./assets/img/css/navegador-justify-content.png" alt="">
 
                 </details>
-            </section>
 
-            <section>
                 <details>
-                    <summary>🔹 Seletor de ID</summary>
+                    <summary>🔹 align-items</summary>
 
                     <ul>
-                        <li><strong>O que é:</strong> Seleciona um elemento único pelo ID.</li>
-                        <li><strong>Quando usar:</strong> Para estilizar um único elemento específico na página.</li>
+                        <li>Define o alinhamento vertical dos itens no eixo cruzado (perpendicular à direção do
+                            flex).</li>
+                        <li><strong>flex-start → </strong>Alinhados ao topo/início do container</li>
+                        <li>flex-end → <strong></strong>Alinhados ao fundo/fim do container</li>
+                        <li><strong>center → </strong>Centralizados verticalmente</li>
+                        <li><strong>stretch → </strong>Esticam para preencher toda a altura do container
+                            (padrão)</li>
+                        <li><strong>baseline → </strong>Alinhados pela linha de base do texto</li>
                     </ul>
 
                     <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-id.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-                    <img src="./assets/img/css/codigo-id.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                    <img src="./assets/img/css/codigo-html-align-items.png" alt="">
+                    <img src="./assets/img/css/codigo-align-items.png" alt="">
 
                     <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-id.png" alt="Resultado do código HTML h1 até h6 no navegador">
+                    <img src="./assets/img/css/navegador-align-items.png" alt="">
+                    <img src="./assets/img/css/navegador-align-items-2.png" alt="">
 
                 </details>
-            </section>
 
-            <section>
                 <details>
-                    <summary>🔹 Seletor de Descendência (espaço)</summary>
+                    <summary>🔹 align-content</summary>
 
                     <ul>
-                        <li><strong>O que é:</strong> Seleciona elementos dentro de outro.</li>
-                        <li><strong>Quando usar:</strong> Quando quer aplicar estilos só aos elementos que estão
-                            aninhados dentro de outro.</li>
-                        <li><strong>Exemplo:</strong> div p = todos &lt;p&gt; que estão dentro de uma &lt;div&gt;.</li>
-                    </ul>
-
-                    <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-descendencia.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-                    <img src="./assets/img/css/codigo-descendencia.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-
-                    <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-descendencia.png"
-                        alt="Resultado do código HTML h1 até h6 no navegador">
-
-                </details>
-            </section>
-
-            <section>
-                <details>
-                    <summary>🔹 Seletor de Filho Direto (>)</summary>
-
-                    <ul>
-                        <li><strong>O que é:</strong> Seleciona somente os filhos diretos de um elemento.</li>
-                        <li><strong>Quando usar:</strong> Quando quer ter controle só sobre os filhos imediatos, não
-                            sobre netos.</li>
-                    </ul>
-
-                    <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-filho-direto.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-                    <img src="./assets/img/css/codigo-filho-direto.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-
-                    <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-filho-direto.png"
-                        alt="Resultado do código HTML h1 até h6 no navegador">
-
-                </details>
-            </section>
-
-            <section>
-                <details>
-                    <summary>🔹 Seletor de Agrupamento (,)</summary>
-
-                    <ul>
-                        <li><strong>O que é:</strong> Aplica o mesmo estilo a vários seletores ao mesmo tempo.</li>
-                        <li><strong>Quando usar:</strong> Para economizar código e aplicar uma regra única a múltiplos
-                            elementos.</li>
-                    </ul>
-
-                    <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-agrupamento.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-                    <img src="./assets/img/css/codigo-agrupamento.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-
-                    <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-agrupamento.png"
-                        alt="Resultado do código HTML h1 até h6 no navegador">
-
-                </details>
-            </section>
-
-            <section>
-                <details>
-                    <summary>🔹 Seletor de Atributo</summary>
-
-                    <ul>
-                        <li><strong>O que é:</strong> Seleciona elementos com um atributo específico ou valor
-                            específico.</li>
-                        <li><strong>Quando usar:</strong> Quando quer estilizar elementos conforme seus atributos.</li>
-                        <li><strong>Exemplo:</strong> todos os &lt;input&gt; cujo type é “text”.</li>
-                    </ul>
-
-                    <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-atributo.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-                    <img src="./assets/img/css/codigo-atributo.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-
-                    <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-atributo.png"
-                        alt="Resultado do código HTML h1 até h6 no navegador">
-
-                </details>
-            </section>
-        </fieldset>
-
-        <fieldset>
-            <legend>📌 Cores e Fundos (Background)</legend>
-
-            <section>
-                <details>
-                    <summary>🔹 Propriedade color</summary>
-
-                    <ul>
-                        <li><strong>O que é:</strong> Define a cor do texto em um elemento.</li>
-                        <li><strong>Quando usar:</strong> Quando você quer alterar a cor padrão do texto para destacar
-                            títulos, links ou qualquer conteúdo textual.</li>
-                        <li><strong>Exemplo:</strong> color: blue; deixa o texto azul.</li>
-                    </ul>
-
-                    <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-color.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-                    <img src="./assets/img/css/codigo-color.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-
-                    <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-color.png"
-                        alt="Resultado do código HTML h1 até h6 no navegador">
-
-                </details>
-            </section>
-
-            <section>
-                <details>
-                    <summary>🔹 Formas de definir cores </summary>
-
-                    <ul>
-                        <li><strong>Nomes de cores:</strong> Como blue, red, green. São limitados, mas fáceis de
-                            lembrar./li>
-                        <li><strong>Hexadecimal:</strong> É o formato mais usado. Ex.: #0000FF (azul). Ele usa 6 dígitos
-                            (ou 3 dígitos abreviados, #00F). Os dois primeiros dígitos são para vermelho, os dois do
-                            meio para verde e os dois últimos para azul (padrão RGB).</li>
-                        <li><strong>RGB:</strong> Define as cores em valores de 0 até 255 para cada canal (vermelho,
-                            verde e azul). Ex.: rgb(0,0,255) (azul).</li>
-                        <li><strong>RGBA:</strong> Igual ao RGB, mas com transparência. O último número vai de 0 até 1
-                            (0 é totalmente transparente e 1 é totalmente opaco). Ex.: rgba(0,0,255,0.5) (azul com 50%
-                            de transparência).</li>
-                        <li><strong>HSL:</strong> Significa Hue (matiz), Saturation (saturação) e Lightness
-                            (luminosidade). Ex.: hsl(240,100%,50%) (azul puro). É ótimo para ajustar tonalidades de
-                            forma mais intuitiva.</li>
-                        <li><strong>HSLA:</strong> Igual ao HSL, mas com transparência no quarto valor. Ex.:
-                            hsla(240,100%,50%,0.5).</li>
-                    </ul>
-
-                    <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-definir-cores.png" alt="Exemplo de código HTML para color">
-                    <img src="./assets/img/css/codigo-definir-cores.png"
-                        alt="Exemplo de código CSS para color em vários formatos">
-
-                    <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-definir-cores.png" alt="Resultado das cores no navegador">
-
-                </details>
-            </section>
-
-            <section>
-                <details>
-                    <summary>🔹 Propriedade background-color</summary>
-
-                    <ul>
-                        <li><strong>O que é:</strong> Define a cor de fundo de um elemento.</li>
-                        <li><strong>Quando usar:</strong> Quando quiser aplicar uma cor de fundo para destacar seções,
-                            caixas, botões etc.</li>
-                        <li><strong>Exemplo:</strong> background-color: lightblue; deixa o fundo azul claro.</li>
-                    </ul>
-
-                    <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-background-color.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-                    <img src="./assets/img/css/codigo-background-color.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-
-                    <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-background-color.png"
-                        alt="Resultado do código HTML h1 até h6 no navegador">
-
-                </details>
-            </section>
-
-            <section>
-                <details>
-                    <summary>🔹 Propriedade background-image</summary>
-
-                    <ul>
-                        <li><strong>O que é:</strong> Permite usar uma imagem como fundo de um elemento.</li>
-                        <li><strong>Quando usar:</strong> Quando quiser adicionar textura ou imagem de fundo em uma
-                            página ou seção.</li>
-                        <li><strong>Exemplo:</strong> background-image: url(./assets/img/css/css.png); coloca uma imagem
-                            como fundo.</li>
-                    </ul>
-
-                    <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-background-image.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-                    <img src="./assets/img/css/codigo-background-image.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-
-                    <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-background-image.png"
-                        alt="Resultado do código HTML h1 até h6 no navegador">
-
-                </details>
-            </section>
-
-            <section>
-                <details>
-                    <summary>🔹 Propriedade background-repeat</summary>
-
-                    <ul>
-                        <li><strong>O que é:</strong> Controla se a imagem de fundo será repetida horizontal e/ou
-                            verticalmente.</li>
-                        <li><strong>Quando usar:</strong> Quando quiser evitar repetição da imagem ou personalizar a
-                            forma como ela se repete.</li>
-                        <li><strong>Exemplo:</strong> background-repeat: repeat; faz a imagem se repetir em mosaico
-                            (horizontal e verticalmente) e usando background-repeat: no-repeat; faz a imagem aparecer
-                            apenas uma vez, sem se repetir.</li>
-                    </ul>
-
-                    <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-background-repeat.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-                    <img src="./assets/img/css/codigo-background-repeat.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-
-                    <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-background-repeat.png"
-                        alt="Resultado do código HTML h1 até h6 no navegador">
-
-                </details>
-            </section>
-
-            <section>
-                <details>
-                    <summary>🔹 Propriedade background-size</summary>
-
-                    <ul>
-                        <li><strong>O que é:</strong> Define o tamanho da imagem de fundo.</li>
-                        <li><strong>Quando usar:</strong> Quando precisar ajustar a imagem para cobrir ou caber dentro
-                            do elemento.</li>
-                        <li><strong>Exemplo:</strong> Cover: a imagem aumenta/diminui para cobrir toda a área, podendo
-                            cortar um pedaço. Contain: a imagem é redimensionada para caber inteira, podendo sobrar
-                            espaço.</li>
-                    </ul>
-
-                    <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-background-size.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-                    <img src="./assets/img/css/codigo-html-background-size.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-
-                    <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-background-size.png"
-                        alt="Resultado do código HTML h1 até h6 no navegador">
-
-                </details>
-            </section>
-
-            <section>
-                <details>
-                    <summary>🔹 Propriedade background-position</summary>
-
-                    <ul>
-                        <li><strong>O que é:</strong> A propriedade background-position serve para definir a posição
-                            da imagem de fundo dentro de um elemento. Ela diz onde a imagem de fundo vai aparecer — por
-                            exemplo,
-                            se vai ficar no topo, no centro, à direita, etc.</li>
-                        <li><strong>Quando usar:</strong> Use essa propriedade quando quiser controlar o ponto exato
-                            onde a
-                            imagem de fundo aparece </li>
-                        <li><strong>Exemplo: </strong> background-position: x y;
-                        <li>O primeiro valor (x) indica a posição horizontal (ex: left, center, right ou um valor em
-                            px/%).</li>
-                        <li>O segundo valor (y) indica a posição vertical (ex: top, center, bottom ou um valor em px/%).
+                        <li>Afeta múltiplas linhas de itens quando flex-wrap é usado. Controla o espaço entre as
+                            linhas.</li>
+                        <li><strong>flex-start → </strong>Linhas alinhadas ao topo/início</li>
+                        <li><strong>flex-end → </strong>Linhas alinhadas ao fundo/fim</li>
+                        <li><strong>center → </strong>Linhas centralizadas</li>
+                        <li><strong>space-between → </strong>Espaço igual entre as linhas</li>
+                        <li><strong>space-around → </strong>Espaço igual ao redor das linhas</li>
+                        <li><strong>stretch → </strong>Linhas esticam para preencher todo o container (padrão)
                         </li>
-                        </li>
-
                     </ul>
 
                     <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-background-position.png"
-                        alt="Exemplo de código HTML para display flex">
-                    <img src="./assets/img/css/codigo-background-position.png"
-                        alt="Exemplo de código CSS para display flex">
+                    <img src="./assets/img/css/codigo-html-align-content.png" alt="">
+                    <img src="./assets/img/css/codigo-align-content.png" alt="">
 
                     <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-background-position.png"
-                        alt="Resultado do display flex no navegador">
+                    <img src="./assets/img/css/navegador-align-content.png" alt="">
 
                 </details>
-            </section>
 
-            <section>
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Display Grid</summary>
+                <ul>
+                    <li>O <strong>display: grid;</strong> transforma um elemento em um <strong>container de
+                            grade</strong>. Dentro desse container, os elementos filhos se tornam <strong>itens
+                            da grade</strong>.</li>
+                    <li>Permite organizar os elementos em <strong>linhas e colunas</strong>, de forma muito
+                        flexível.</li>
+                </ul>
+
                 <details>
-                    <summary>🔹 Propriedade background-attachment</summary>
+                    <summary>🔹 grid-template-columns</summary>
 
-                    <ul>
-                        <li><strong>O que é:</strong> A propriedade background-attachment define como o fundo
-                            (background)
-                            de um elemento se comporta quando a página é rolada (scroll). Em outras palavras, ela
-                            controla
-                            se a imagem de fundo se move junto com o conteúdo ou fica fixa na tela.</li>
-                        <li><strong>Quando usar:</strong> Use essa propriedade quando quiser criar efeitos de rolagem no
-                            fundo.</li>
-                        <li>Deixar o fundo fixo enquanto o conteúdo se move (efeito “parallax”);</li>
-                        <li>Fazer o fundo rolar junto com o texto;</li>
-                        <li>Controlar o comportamento do fundo em elementos com rolagem interna.</li>
-                        <li><strong>Exemplo: </strong> </li>
+                    <h3>💻 Código HTML usado para todos os Exemplos a seguir</h3>
+                    <img src="./assets/img/css/codigo-html-grid-template.png" alt="">
 
-                    </ul>
+                    <h3>💻 Exemplo de código tamanho fixo</h3>
+                    <img src="./assets/img/css/codigo-grid-tamanho-fixo.png" alt="">
 
-                    <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-background-attachment.png"
-                        alt="Exemplo de código HTML para display flex">
-                    <img src="./assets/img/css/codigo-background-attachment.png"
-                        alt="Exemplo de código CSS para display flex">
+                    <h3>🖥️ Resultados no navegador</h3>
+                    <img src="./assets/img/css/navegador-grid-tamanho-fixo.png" alt="">
 
-                    <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-background-attachment.png"
-                        alt="Resultado do display flex no navegador">
+                    <h3>💻 Exemplo de código de frações</h3>
+                    <img src="./assets/img/css/codigo-grid-fracoes.png" alt="">
+
+                    <h3>🖥️ Resultados no navegador</h3>
+                    <img src="./assets/img/css/navegador-grid-fracoes.png" alt="">
+
+                    <h3>💻 Exemplo de código de linhas</h3>
+                    <img src="./assets/img/css/codigo-grid-linhas.png" alt="">
+
+                    <h3>🖥️ Resultados no navegador</h3>
+                    <img src="./assets/img/css/navegador-grid-linhas.png" alt="">
+
+                    <h3>💻 Exemplo de código repeat</h3>
+                    <img src="./assets/img/css/codigo-grid-repeat.png" alt="">
+
+                    <h3>🖥️ Resultados no navegador</h3>
+                    <img src="./assets/img/css/navegador-grid-repeat.png" alt="">
+
+                    <h3>💻 Exemplo de código repeat</h3>
+                    <img src="./assets/img/css/codigo-grid-repeat2.png" alt="">
+
+                    <h3>🖥️ Resultados no navegador</h3>
+                    <img src="./assets/img/css/navegador-grid-repeat2.png" alt="">
+
+                    <h3>💻 Exemplo de código repeat</h3>
+                    <img src="./assets/img/css/codigo-grid-repeat3.png" alt="">
+
+                    <h3>🖥️ Resultados no navegador</h3>
+                    <img src="./assets/img/css/navegador-grid-repeat3.png" alt="">
+
+                    <h3>💻 Exemplo de código auto-fill</h3>
+                    <img src="./assets/img/css/codigo-grid-auto-fill.png" alt="">
+
+                    <h3>🖥️ Resultados no navegador</h3>
+                    <img src="./assets/img/css/navegador-grid-auto-fill.png" alt="">
+
+                    <h3>💻 Exemplo de código auto-fit</h3>
+                    <img src="./assets/img/css/codigo-grid-auto-fit.png" alt="">
+
+                    <h3>🖥️ Resultados no navegador</h3>
+                    <img src="./assets/img/css/navegador-grid-auto-fit.png" alt="">
+
+                    <h3>💻 Exemplo de código min-content</h3>
+                    <img src="./assets/img/css/codigo-grid-min-content.png" alt="">
+
+                    <h3>🖥️ Resultados no navegador</h3>
+                    <img src="./assets/img/css/navegador-grid-min-content.png" alt="">
+
+                    <h3>💻 Exemplo de código max-content</h3>
+                    <img src="./assets/img/css/codigo-grid-max-content.png" alt="">
+
+                    <h3>🖥️ Resultados no navegador</h3>
+                    <img src="./assets/img/css/navegador-grid-max-content.png" alt="">
+
+                    <h3>💻 Exemplo de código auto</h3>
+                    <img src="./assets/img/css/codigo-grid-auto.png" alt="">
+
+                    <h3>🖥️ Resultados no navegador</h3>
+                    <img src="./assets/img/css/navegador-grid-auto.png" alt="">
 
                 </details>
-            </section>
 
-            <section>
                 <details>
-                    <summary>🔹 Propriedade background: linear-gradient</summary>
-
+                    <summary>🔹 grid-template-rows</summary>
                     <ul>
-                        <li><strong>O que é:</strong> é usada para criar um degradê de cores como fundo — ou seja, uma
-                            transição
-                            suave entre duas ou mais cores.</li>
-                        <li><strong>Quando usar:</strong> Use gradientes quando quiser dar vida ao layout sem depender
-                            de imagens pesadas.
-                            Eles são 100% controláveis pelo CSS e funcionam em qualquer tamanho de tela.
-                        <li>Use para criar fundos coloridos com transição suave (sem precisar de imagem);</li>
-                        <li>Dar profundidade ou destaque visual a botões, seções, headers, etc.;</li>
-                        <li>Substituir imagens de fundo leves, melhorando performance e design responsivo.</li>
-                        </li>
-                        <li><strong>Exemplo: </strong> </li>
-
+                        <li>Assim como usamos grid-template-columns para dividir o espaço em colunas, também
+                            podemos usar grid-template-rows para dividir o espaço em linhas.</li>
+                        <li>A lógica é a mesma: podemos usar px, %, auto ou fr para definir os tamanhos.</li>
                     </ul>
 
                     <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-background-linear-gradient.png"
-                        alt="Exemplo de código HTML para display flex">
-                    <img src="./assets/img/css/codigo-background-linear-gradient.png"
-                        alt="Exemplo de código CSS para display flex">
+                    <img src="./assets/img/css/codigo-html-grid-template-rows.png"
+                        alt="Exemplo de código HTML para display block, inline, inline-block e none">
+                    <img src="./assets/img/css/codigo-grid-template-rows.png"
+                        alt="Exemplo de código CSS para display block, inline, inline-block e none">
 
                     <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-background-linear-gradient.png"
-                        alt="Resultado do display flex no navegador">
-
+                    <img src="./assets/img/css/navegador-grid-template-rows.png"
+                        alt="Resultado dos valores block, inline, inline-block e none no navegador">
                 </details>
-            </section>
 
-            <section>
                 <details>
-                    <summary>🔹 Propriedade opacity</summary>
-
+                    <summary>🔹 grid-template-areas</summary>
                     <ul>
-                        <li><strong>O que é:</strong> Controla a transparência de um elemento inteiro.</li>
-                        <li><strong>Quando usar:</strong> Quando quiser dar efeito de transparência, deixando o fundo ou
-                            conteúdo parcialmente visível.</li>
-                        <li><strong>Exemplo:</strong> opacity: 0.5; deixa o elemento 50% transparente.</li>
+                        <li><strong>O que é:</strong> É só uma forma de dar nomes para as partes do grid.
+                            Em vez de ficar medindo coluna/linha pra colocar cada item, você cria um mapa com
+                            palavras.</li>
+                        <li><strong>Quando usar:</strong> </li>
                     </ul>
 
+                    <h3>💻 Exemplo </h3>
+                    <img src="./assets/img/css/navegador-grid-template-area-explicacao.png" alt="">
                     <h3>💻 Exemplo de código</h3>
-                    <img src="./assets/img/css/codigo-html-opacity.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
-                    <img src="./assets/img/css/codigo-opacity.png"
-                        alt="Exemplo de código CSS do seletor universal * que zera margin e padding">
+                    <img src="./assets/img/css/codigo-html-grid-template-areas.png" alt="">
+                    <img src="./assets/img/css/codigo-grid-template-areas.png" alt="">
 
                     <h3>🖥️ Resultado no navegador</h3>
-                    <img src="./assets/img/css/navegador-opacity.png"
-                        alt="Resultado do código HTML h1 até h6 no navegador">
+                    <img src="./assets/img/css/navegador-grid-template-areas.png" alt="">
 
                 </details>
-            </section>
-
-            </fieldset>
-
-            <fieldset>
-                <legend>📌 Propriedades de texto</legend>
-
-                <section>
-                    <details>
-                        <summary>🔹 Propriedade font-family</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> Define a família de fontes do texto (ex.: Arial, Verdana,
-                                sans-serif, etc.).</li>
-                            <li><strong>Quando usar:</strong> Sempre que quiser alterar ou padronizar a fonte de um
-                                elemento ou página inteira.</li>
-                            <li><strong>Exemplo:</strong> Escolher uma fonte específica ou uma lista de fontes para
-                                fallback caso a principal não esteja disponível.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-font-family.png"
-                            alt="Exemplo de código HTML para font-family">
-                        <img src="./assets/img/css/codigo-font-family.png" alt="Exemplo de código CSS para font-family">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-font-family.png"
-                            alt="Resultado da propriedade font-family no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Propriedade font-size</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> Define o tamanho da fonte do texto.</li>
-                            <li><strong>Quando usar:</strong> Sempre que precisar ajustar o tamanho da letra para
-                                melhorar a legibilidade ou criar hierarquia visual.</li>
-                            <li><strong>Exemplo:</strong> Alterar o tamanho do texto de títulos e parágrafos.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-font.png" alt="Exemplo de código HTML para font-size">
-                        <img src="./assets/img/css/codigo-font-size.png" alt="Exemplo de código CSS para font-size">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-font-size.png"
-                            alt="Resultado da propriedade font-size no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Propriedade font-weight</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> Define o peso (espessura) da fonte, podendo ir de normal até
-                                negrito.</li>
-                            <li><strong>Quando usar:</strong> Quando quiser destacar um texto usando negrito ou variar a
-                                espessura da fonte.</li>
-                            <li><strong>Exemplo:</strong> Usar valores como normal, bold, 100, 400, 700 para controlar a
-                                espessura.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-font.png" alt="Exemplo de código HTML para font-weight">
-                        <img src="./assets/img/css/codigo-font-weight.png" alt="Exemplo de código CSS para font-weight">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-font-weight.png"
-                            alt="Resultado da propriedade font-weight no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Propriedade font-style</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> define o estilo da fonte — ou seja, se o texto será normal, 
-                                itálico ou oblíquo (inclinado). Ela muda a aparência da letra, deixando o texto com 
-                                um toque mais elegante ou para destacar palavras específicas.</li>
-                            <li><strong>Quando usar:</strong>
-                                <li>Dar ênfase em títulos ou palavras;</li>
-                                <li>Criar estilo mais “leve” ou “sofisticado”;</li>
-                                <li>Destacar frases, citações ou nomes de pessoas.</li>
-                            </li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-font-style.png" alt="Exemplo de código HTML para font-weight">
-                        <img src="./assets/img/css/codigo-font-style.png" alt="Exemplo de código CSS para font-weight">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-font-style.png"
-                            alt="Resultado da propriedade font-weight no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Propriedade text-align</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> Alinha o texto dentro de um elemento (esquerda, direita,
-                                centro, justificado).</li>
-                            <li><strong>Quando usar:</strong> Quando precisar centralizar ou alinhar textos para compor
-                                o layout.</li>
-                            <li><strong>Exemplo:</strong> Usar valores como left, right, center, justify.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-font.png" alt="Exemplo de código HTML para text-align">
-                        <img src="./assets/img/css/codigo-text-align.png" alt="Exemplo de código CSS para text-align">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-text-align.png"
-                            alt="Resultado da propriedade text-align no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Propriedade text-decoration</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> Controla decorações do texto como sublinhado, linha sobreposta
-                                ou nenhuma.</li>
-                            <li><strong>Quando usar:</strong> Para remover sublinhado de links ou criar efeitos em
-                                títulos.</li>
-                            <li><strong>Exemplo:</strong> Valores mais usados: none, underline, overline, line-through.
-                            </li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-font.png"
-                            alt="Exemplo de código HTML para text-decoration">
-                        <img src="./assets/img/css/codigo-text-decoration.png"
-                            alt="Exemplo de código CSS para text-decoration">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-text-decoration.png"
-                            alt="Resultado da propriedade text-decoration no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Propriedade text-transform</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> Controla a transformação do texto para maiúsculas, minúsculas
-                                ou capitalização automática.</li>
-                            <li><strong>Quando usar:</strong> Quando quiser padronizar a aparência do texto sem precisar
-                                alterar o conteúdo original no HTML.</li>
-                            <li><strong>Exemplo:</strong> Usar valores como uppercase, lowercase, capitalize para mudar
-                                a forma das letras.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-text-transform.png"
-                            alt="Exemplo de código HTML para text-transform">
-                        <img src="./assets/img/css/codigo-text-transform.png"
-                            alt="Exemplo de código CSS para text-transform">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-text-transform.png"
-                            alt="Resultado da propriedade text-transform no navegador">
-
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Propriedade text-shadow</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> Adiciona uma sombra ao texto, podendo definir o deslocamento, 
-                                desfoque e cor da sombra.</li>
-                            <li><strong>Quando usar:</strong> Usada para destacar textos, criar efeitos visuais sutis ou 
-                                títulos com mais profundidade.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-text-shadow.png"
-                            alt="Exemplo de código HTML para line-height">
-                        <img src="./assets/img/css/codigo-text-shadow.png" alt="Exemplo de código CSS para line-height">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-text-shadow.png"
-                            alt="Resultado da propriedade line-height no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Propriedade word-spacing</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> Controla o espaçamento entre as palavras de um texto.</li>
-                            <li><strong>Quando usar:</strong> Usada para melhorar a legibilidade, alinhar visualmente 
-                                textos em banners, títulos ou parágrafos.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-word-spacing.png"
-                            alt="Exemplo de código HTML para letter-spacing">
-                        <img src="./assets/img/css/codigo-word-spacing.png"
-                            alt="Exemplo de código CSS para letter-spacing">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-word-spacing.png"
-                            alt="Resultado da propriedade letter-spacing no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Propriedade letter-spacing</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> Define o espaçamento horizontal entre as letras de um texto.
-                            </li>
-                            <li><strong>Quando usar:</strong> Quando quiser aumentar ou diminuir o espaço entre
-                                caracteres para melhorar a legibilidade ou criar um efeito visual.</li>
-                            <li><strong>Exemplo:</strong> Usar valores positivos para aumentar e negativos para diminuir
-                                o espaçamento.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-letter-spacing.png"
-                            alt="Exemplo de código HTML para letter-spacing">
-                        <img src="./assets/img/css/codigo-letter-spacing.png"
-                            alt="Exemplo de código CSS para letter-spacing">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-letter-spacing.png"
-                            alt="Resultado da propriedade letter-spacing no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Propriedade line-height</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> Define a altura da linha do texto, ou seja, o espaçamento
-                                vertical entre linhas.</li>
-                            <li><strong>Quando usar:</strong> Quando quiser melhorar a legibilidade de parágrafos
-                                ajustando o espaço entre linhas.</li>
-                            <li><strong>Exemplo:</strong> Pode ser definido em números, porcentagem ou unidades (ex.:
-                                1.5, 150%, 24px).</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-line-height.png"
-                            alt="Exemplo de código HTML para line-height">
-                        <img src="./assets/img/css/codigo-line-height.png" alt="Exemplo de código CSS para line-height">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-line-height.png"
-                            alt="Resultado da propriedade line-height no navegador">
-
-                    </details>
-                </section>
-
-            </fieldset>
-
-            <fieldset>
-                <legend>📌 Unidades de Medida (CSS)</legend>
-
-                <section>
-                    <details>
-                        <summary>🔹 Absolutas / Relativas</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> São as unidades usadas para definir tamanhos no CSS, como
-                                largura, altura, fontes, margens e espaçamentos.</li>
-                            <li><strong>Quando usar:</strong> Sempre que precisar definir tamanhos de forma fixa
-                                (absoluta) ou adaptável (relativa) no seu layout.</li>
-                            <li><strong>Exemplo:</strong> px, %, em, rem, vh, vw, etc.</li>
-                        </ul>
-
-                        <h3>💻 Exemplos de Unidades</h3>
-                        <ul>
-                            <li><strong>px (pixels):</strong> Unidade absoluta mais comum. Ex.:
-                                <code>font-size: 16px;</code>
-                            </li>
-                            <li><strong>% (porcentagem):</strong> Relativa ao elemento pai. Ex.:
-                                <code>width: 50%;</code>
-                            </li>
-                            <li><strong>em:</strong> Relativa ao tamanho da fonte do elemento pai. Ex.:
-                                <code>padding: 2em;</code>
-                            </li>
-                            <li><strong>rem:</strong> Relativa ao tamanho da fonte raiz (html). Ex.:
-                                <code>margin: 1.5rem;</code>
-                            </li>
-                            <li><strong>vh (viewport height):</strong> Relativa à altura da janela do navegador. Ex.:
-                                <code>height: 50vh;</code>
-                            </li>
-                            <li><strong>vw (viewport width):</strong> Relativa à largura da janela do navegador. Ex.:
-                                <code>width: 80vw;</code>
-                            </li>
-                            <li><strong>vmin/vmax:</strong> Relativas ao menor ou maior valor entre largura e altura do
-                                viewport.</li>
-                            <li><strong>cm / mm / in:</strong> Unidades físicas (centímetro, milímetro, polegada) —
-                                raramente usadas na tela.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-medida.png"
-                            alt="Exemplo de código HTML para unidades de medida">
-                        <img src="./assets/img/css/codigo-medida.png"
-                            alt="Exemplo de código CSS para unidades de medida">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-medida.png"
-                            alt="Resultado das unidades de medida no navegador">
-
-                    </details>
-                </section>
-
-            </fieldset>
-
-            <fieldset>
-                <legend>📌 Propriedades de Display e Layout</legend>
-
-                <section>
-                    <details>
-                        <summary>🔹 Display padrão: block / inline / inline-block / none</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> A propriedade <strong>display</strong> define como um elemento
-                                é
-                                exibido na página.</li>
-                            <li><strong>Quando usar:</strong> Sempre que precisar controlar se o elemento ocupa toda a
-                                linha, se fica ao lado de outros ou se deve desaparecer.</li>
-                            <li><strong>Exemplo:</strong>
-                                <ul>
-                                    <li><strong>block</strong> → O elemento ocupa toda a largura disponível (ex.:
-                                        &lt;div&gt;, &lt;p&gt;).</li>
-                                    <li><strong>inline</strong> → O elemento ocupa apenas o espaço do conteúdo e fica na
-                                        mesma linha (ex.: &lt;span&gt;, &lt;a&gt;).</li>
-                                    <li><strong>inline-block</strong> → Mistura os dois: fica na mesma linha, mas
-                                        permite
-                                        definir largura/altura.</li>
-                                    <li><strong>none</strong> → O elemento não é exibido na tela.</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-display.png"
-                            alt="Exemplo de código HTML para display block, inline, inline-block e none">
-                        <img src="./assets/img/css/codigo-display.png"
-                            alt="Exemplo de código CSS para display block, inline, inline-block e none">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-display.png"
-                            alt="Resultado dos valores block, inline, inline-block e none no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Display Flex (Flexbox)</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> O <strong>display: flex;</strong> transforma um elemento em um
-                                <em>container flexível</em>, permitindo organizar seus filhos (itens) em linha ou coluna
-                                de forma prática.
-                            </li>
-                            <li><strong>Quando usar:</strong> Para alinhar, distribuir espaço ou organizar itens em
-                                layouts responsivos (menus, cards, caixas lado a lado, centralização na tela, etc.).
-                            </li>
-                            <li><strong>Exemplo:</strong> Centralizar elementos na tela, criar menus horizontais,
-                                dividir espaço igualmente entre caixas.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-display-flex.png"
-                            alt="Exemplo de código HTML para display flex">
-                        <img src="./assets/img/css/codigo-display-flex.png"
-                            alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-display-flex.png"
-                            alt="Resultado do display flex no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Container Flex</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> As propriedades do <strong>container flex </strong> controlam
-                                como os itens são distribuídos e alinhados dentro do container.</li>
-                            <li><strong>Quando usar:</strong> você usa essas propriedades quando quer que os elementos
-                                internos se comportem de forma flexível (em linha, em coluna, alinhados, espaçados,
-                                etc.).</li>
-                        </ul>
-
-                        <h3>Abaixo os itens que podem ser usados com display flex</h3>
-
-                        <details>
-                            <summary>🔹 Flex-direction</summary>
-
-                            <ul>
-                                <li>Define a direção dos itens dentro do container.</li>
-                                <li><strong>row → </strong>Itens na horizontal (padrão)</li>
-                                <li><strong>row-reverse → </strong>Horizontal invertida</li>
-                                <li><strong>column → </strong>Vertical</li>
-                                <li><strong>column-reverse → </strong>Vertical invertida</li>
-                            </ul>
-
-                            <h3>💻 Exemplo de código</h3>
-                            <img src="./assets/img/css/codigo-html-flex-direction.png" alt="">
-                            <img src="./assets/img/css/codigo-flex-direction.png" alt="">
-
-                            <h3>🖥️ Resultado no navegador</h3>
-                            <img src="./assets/img/css/navegador-flex-direction.png" alt="">
-
-                        </details>
-
-                        <details>
-                            <summary>🔹 justify-content</summary>
-
-                            <ul>
-                                <li>Define o alinhamento horizontal dos itens no eixo principal (dependendo da direção
-                                    do flex).</li>
-                                <li><strong>flex-start → </strong>Alinhados à esquerda/topo</li>
-                                <li><strong>flex-end → </strong>Alinhados à direita/fundo</li>
-                                <li><strong>center → </strong>Centralizados</li>
-                                <li><strong>space-between → </strong>Espaço igual entre os itens</li>
-                                <li><strong>space-around → </strong>Espaço igual ao redor dos itens</li>
-                                <li><strong>space-evenly → </strong>Espaço igual entre e ao redor</li>
-                            </ul>
-
-                            <h3>💻 Exemplo de código</h3>
-                            <img src="./assets/img/css/codigo-html-justify-content.png" alt="">
-                            <img src="./assets/img/css/codigo-justify-content.png" alt="">
-
-                            <h3>🖥️ Resultado no navegador</h3>
-                            <img src="./assets/img/css/navegador-justify-content.png" alt="">
-
-                        </details>
-
-                        <details>
-                            <summary>🔹 align-items</summary>
-
-                            <ul>
-                                <li>Define o alinhamento vertical dos itens no eixo cruzado (perpendicular à direção do
-                                    flex).</li>
-                                <li><strong>flex-start → </strong>Alinhados ao topo/início do container</li>
-                                <li>flex-end → <strong></strong>Alinhados ao fundo/fim do container</li>
-                                <li><strong>center → </strong>Centralizados verticalmente</li>
-                                <li><strong>stretch → </strong>Esticam para preencher toda a altura do container
-                                    (padrão)</li>
-                                <li><strong>baseline → </strong>Alinhados pela linha de base do texto</li>
-                            </ul>
-
-                            <h3>💻 Exemplo de código</h3>
-                            <img src="./assets/img/css/codigo-html-align-items.png" alt="">
-                            <img src="./assets/img/css/codigo-align-items.png" alt="">
-
-                            <h3>🖥️ Resultado no navegador</h3>
-                            <img src="./assets/img/css/navegador-align-items.png" alt="">
-                            <img src="./assets/img/css/navegador-align-items-2.png" alt="">
-
-                        </details>
-
-                        <details>
-                            <summary>🔹 align-content</summary>
-
-                            <ul>
-                                <li>Afeta múltiplas linhas de itens quando flex-wrap é usado. Controla o espaço entre as
-                                    linhas.</li>
-                                <li><strong>flex-start → </strong>Linhas alinhadas ao topo/início</li>
-                                <li><strong>flex-end → </strong>Linhas alinhadas ao fundo/fim</li>
-                                <li><strong>center → </strong>Linhas centralizadas</li>
-                                <li><strong>space-between → </strong>Espaço igual entre as linhas</li>
-                                <li><strong>space-around → </strong>Espaço igual ao redor das linhas</li>
-                                <li><strong>stretch → </strong>Linhas esticam para preencher todo o container (padrão)
-                                </li>
-                            </ul>
-
-                            <h3>💻 Exemplo de código</h3>
-                            <img src="./assets/img/css/codigo-html-align-content.png" alt="">
-                            <img src="./assets/img/css/codigo-align-content.png" alt="">
-
-                            <h3>🖥️ Resultado no navegador</h3>
-                            <img src="./assets/img/css/navegador-align-content.png" alt="">
-
-                        </details>
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Display Grid</summary>
-                        <ul>
-                            <li>O <strong>display: grid;</strong> transforma um elemento em um <strong>container de
-                                    grade</strong>. Dentro desse container, os elementos filhos se tornam <strong>itens
-                                    da grade</strong>.</li>
-                            <li>Permite organizar os elementos em <strong>linhas e colunas</strong>, de forma muito
-                                flexível.</li>
-                        </ul>
-
-                        <details>
-                            <summary>🔹 grid-template-columns</summary>
-
-                            <h3>💻 Código HTML usado para todos os Exemplos a seguir</h3>
-                            <img src="./assets/img/css/codigo-html-grid-template.png" alt="">
-
-                            <h3>💻 Exemplo de código tamanho fixo</h3>
-                            <img src="./assets/img/css/codigo-grid-tamanho-fixo.png" alt="">
-
-                            <h3>🖥️ Resultados no navegador</h3>
-                            <img src="./assets/img/css/navegador-grid-tamanho-fixo.png" alt="">
-
-                            <h3>💻 Exemplo de código de frações</h3>
-                            <img src="./assets/img/css/codigo-grid-fracoes.png" alt="">
-
-                            <h3>🖥️ Resultados no navegador</h3>
-                            <img src="./assets/img/css/navegador-grid-fracoes.png" alt="">
-
-                            <h3>💻 Exemplo de código de linhas</h3>
-                            <img src="./assets/img/css/codigo-grid-linhas.png" alt="">
-
-                            <h3>🖥️ Resultados no navegador</h3>
-                            <img src="./assets/img/css/navegador-grid-linhas.png" alt="">
-
-                            <h3>💻 Exemplo de código repeat</h3>
-                            <img src="./assets/img/css/codigo-grid-repeat.png" alt="">
-
-                            <h3>🖥️ Resultados no navegador</h3>
-                            <img src="./assets/img/css/navegador-grid-repeat.png" alt="">
-
-                            <h3>💻 Exemplo de código repeat</h3>
-                            <img src="./assets/img/css/codigo-grid-repeat2.png" alt="">
-
-                            <h3>🖥️ Resultados no navegador</h3>
-                            <img src="./assets/img/css/navegador-grid-repeat2.png" alt="">
-
-                            <h3>💻 Exemplo de código repeat</h3>
-                            <img src="./assets/img/css/codigo-grid-repeat3.png" alt="">
-
-                            <h3>🖥️ Resultados no navegador</h3>
-                            <img src="./assets/img/css/navegador-grid-repeat3.png" alt="">
-
-                            <h3>💻 Exemplo de código auto-fill</h3>
-                            <img src="./assets/img/css/codigo-grid-auto-fill.png" alt="">
-
-                            <h3>🖥️ Resultados no navegador</h3>
-                            <img src="./assets/img/css/navegador-grid-auto-fill.png" alt="">
-
-                            <h3>💻 Exemplo de código auto-fit</h3>
-                            <img src="./assets/img/css/codigo-grid-auto-fit.png" alt="">
-
-                            <h3>🖥️ Resultados no navegador</h3>
-                            <img src="./assets/img/css/navegador-grid-auto-fit.png" alt="">
-
-                            <h3>💻 Exemplo de código min-content</h3>
-                            <img src="./assets/img/css/codigo-grid-min-content.png" alt="">
-
-                            <h3>🖥️ Resultados no navegador</h3>
-                            <img src="./assets/img/css/navegador-grid-min-content.png" alt="">
-
-                            <h3>💻 Exemplo de código max-content</h3>
-                            <img src="./assets/img/css/codigo-grid-max-content.png" alt="">
-
-                            <h3>🖥️ Resultados no navegador</h3>
-                            <img src="./assets/img/css/navegador-grid-max-content.png" alt="">
-
-                            <h3>💻 Exemplo de código auto</h3>
-                            <img src="./assets/img/css/codigo-grid-auto.png" alt="">
-
-                            <h3>🖥️ Resultados no navegador</h3>
-                            <img src="./assets/img/css/navegador-grid-auto.png" alt="">
-
-                        </details>
-
-                        <details>
-                            <summary>🔹 grid-template-rows</summary>
-                            <ul>
-                                <li>Assim como usamos grid-template-columns para dividir o espaço em colunas, também
-                                    podemos usar grid-template-rows para dividir o espaço em linhas.</li>
-                                <li>A lógica é a mesma: podemos usar px, %, auto ou fr para definir os tamanhos.</li>
-                            </ul>
-
-                            <h3>💻 Exemplo de código</h3>
-                            <img src="./assets/img/css/codigo-html-grid-template-rows.png"
-                                alt="Exemplo de código HTML para display block, inline, inline-block e none">
-                            <img src="./assets/img/css/codigo-grid-template-rows.png"
-                                alt="Exemplo de código CSS para display block, inline, inline-block e none">
-
-                            <h3>🖥️ Resultado no navegador</h3>
-                            <img src="./assets/img/css/navegador-grid-template-rows.png"
-                                alt="Resultado dos valores block, inline, inline-block e none no navegador">
-                        </details>
-
-                        <details>
-                            <summary>🔹 grid-template-areas</summary>
-                            <ul>
-                                <li><strong>O que é:</strong> É só uma forma de dar nomes para as partes do grid.
-                                    Em vez de ficar medindo coluna/linha pra colocar cada item, você cria um mapa com
-                                    palavras.</li>
-                                <li><strong>Quando usar:</strong> </li>
-                            </ul>
-
-                            <h3>💻 Exemplo </h3>
-                            <img src="./assets/img/css/navegador-grid-template-area-explicacao.png" alt="">
-                            <h3>💻 Exemplo de código</h3>
-                            <img src="./assets/img/css/codigo-html-grid-template-areas.png" alt="">
-                            <img src="./assets/img/css/codigo-grid-template-areas.png" alt="">
-
-                            <h3>🖥️ Resultado no navegador</h3>
-                            <img src="./assets/img/css/navegador-grid-template-areas.png" alt="">
-
-                        </details>
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Medida fr no Grid</summary>
-                        <ul>
-                            <li>A unidade <code>fr</code> significa <strong>fração</strong>.</li>
-                            <li>Ela divide o <strong>espaço disponível</strong> em partes iguais ou proporcionais.</li>
-                            <li>Diferente do <code>px</code> que é fixo, o <code>fr</code> é <strong>flexível</strong> e
-                                se adapta ao tamanho da tela.</li>
-                        </ul>
-
-                        <h3>Exemplo</h3>
-                        <p>Se temos <code>grid-template-columns: 1fr 1fr;</code> significa que o espaço é dividido em 2
-                            colunas iguais.</p>
-                        <p>Já em <code>grid-template-columns: 2fr 1fr;</code> a primeira coluna ocupa o dobro de espaço
-                            da segunda</p>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-fr.png" alt="Exemplo grid com 2 colunas 1fr e 1fr" />
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-fr.png"
-                            alt="Exemplo grid com 2 colunas, uma 2fr e outra 1fr" />
-                    </details>
-                </section>
-
-            </fieldset>
-
-            <fieldset>
-                <legend>📌 Espaçamento e Tamanho</legend>
-
-                <section>
-                    <details>
-                        <summary>🔹 Gap</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> Cria um espaço entre os itens dentro de um container que usa
-                                Grid ou Flexbox.</li>
-                            <li><strong>Quando usar:</strong> É uma forma prática de separar os elementos sem precisar
-                                adicionar margin em cada um.</li>
-                            <li><strong>Também é possível usar:</strong>
-                            <li><strong>row-gap:</strong> espaçamento apenas entre as linhas</li>
-                            <li><strong>column-gap:</strong> espaçamento apenas entre as colunas</li>
-                            </li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-gap.png" alt="Exemplo de código HTML para display flex">
-                        <img src="./assets/img/css/codigo-gap.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-gap.png" alt="Resultado do display flex no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Margin</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> A propriedade margin em CSS serve para criar espaçamento
-                                externo — ou seja, espaço entre um elemento
-                                e o que está fora dele (outros elementos, bordas do container, etc).</li>
-                            <li><strong>Quando usar:</strong>Você usa sempre que quiser afastar um elemento dos outros à
-                                sua volta.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-margin.png"
-                            alt="Exemplo de código HTML para display flex">
-                        <img src="./assets/img/css/codigo-margin.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-margin.png" alt="Resultado do display flex no navegador">
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-margin-2.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-margin-2.png" alt="Resultado do display flex no navegador">
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-margin-3.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-margin-3.png" alt="Resultado do display flex no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Padding</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> A propriedade padding em CSS serve para criar espaçamento
-                                interno —
-                                ou seja, o espaço entre o conteúdo do elemento e a sua borda.</li>
-                            <li><strong>Quando usar:</strong> Você usa sempre que quiser dar respiro ao conteúdo interno
-                                do elemento.</li>
-                            <li><strong>Pensa assim:</strong>
-                            <li><strong>margin =</strong> espaço fora do elemento.</li>
-                            <li><strong>padding =</strong> espaço dentro do elemento.</li>
-                            </li>
-                            <li><strong>Exemplo:</strong>
-                            <li>Aumentar o espaço entre o texto e a borda de um botão.</li>
-                            <li>Criar espaço interno em cards, seções, caixas de texto.</li>
-                            <li>Evitar que o conteúdo “grude” nas bordas.</li>
-                            </li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-padding.png"
-                            alt="Exemplo de código HTML para display flex">
-                        <img src="./assets/img/css/codigo-padding.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-padding.png" alt="Resultado do display flex no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Width</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> Define a largura de um elemento. 
-                                Ela pode ser medida em px, %, rem, vw, etc.</li>
-                            <li><strong>Quando usar:</strong> Use width quando quiser definir um tamanho fixo 
-                                ou proporcional para um elemento, como caixas, imagens, botões ou seções.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-width-height.png"
-                            alt="Exemplo de código HTML para display flex">
-                        <img src="./assets/img/css/codigo-width.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-width.png" alt="Resultado do display flex no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Height</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> Define a altura de um elemento.
-                                Assim como o width, você pode usar px, %, rem, vh, etc.</li>
-                            <li><strong>Quando usar:</strong> Use height quando quiser controlar 
-                                a altura de um bloco ou imagem, deixando o layout mais uniforme.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-width-height.png"
-                            alt="Exemplo de código HTML para display flex">
-                        <img src="./assets/img/css/codigo-height.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-height.png" alt="Resultado do display flex no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Max-width / Max-height</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> Define a largura e altura máxima que um elemento pode ter. 
-                                Mesmo que a tela seja muito grande, o elemento nunca vai ultrapassar esse limite.</li>
-                            <li><strong>Quando usar:</strong> Use em sites responsivos, especialmente em imagens, 
-                                seções e containers, pra que eles não fiquem enormes em telas grandes.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-max.png"
-                            alt="Exemplo de código HTML para display flex">
-                        <img src="./assets/img/css/codigo-max.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-max.png" alt="Resultado do display flex no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Min-width / Min-height / Overflow</summary>
-
-                        <ul>
-                            <li><strong>min-width e min-height →</strong> Impedem que o elemento fique menor que um certo tamanho. 
-                                Mesmo que o conteúdo ou a tela diminuam, ele não ficará menor do que o valor definido.</li>
-                            <li><strong>Overflow →</strong> Define o que acontece quando o conteúdo é maior que o elemento.</li>
-                            <li><strong>min-width →</strong> Largura mínima</li>
-                            <li><strong>min-height →</strong> Altura mínima</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-min-overflow.png"
-                            alt="Exemplo de código HTML para display flex">
-                        <img src="./assets/img/css/codigo-min-overflow.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                         <img src="./assets/img/css/navegador-min.png" alt="Exemplo de código CSS para display flex">
-                         <img src="./assets/img/css/navegador-overflow.png" alt="Exemplo de código CSS para display flex">
-
-                    </details>
-                </section>
-
-            </fieldset>
-
-            <fieldset>
-                <legend>📌 Estilo e Efeitos</legend> 
-
-                <section>
-                    <details>
-                        <summary>🔹 Border</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> A propriedade border (borda) é usada para adicionar uma linha
-                                ao redor de um
-                                elemento HTML, como uma caixa, imagem, botão ou parágrafo. Ela ajuda a destacar, separar
-                                áreas ou
-                                decorar elementos na página.</li>
-                            <li><strong>Quando usar:</strong>
-                            <li>Destacar uma seção, botão ou imagem;</li>
-                            <li>Criar caixas com contorno;</li>
-                            <li>Ajudar na visualização da estrutura do layout (durante o desenvolvimento);</li>
-                            <li>Criar estilos personalizados (como bordas coloridas ou arredondadas).</li>
-                            </li>
-
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-border.png"
-                            alt="Exemplo de código HTML para display flex">
-                        <img src="./assets/img/css/codigo-border.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-border.png" alt="Resultado do display flex no navegador">
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-border-2.png" alt="">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-border-2.png" alt="">
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-border-3.png" alt="">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-border-3.png" alt="">
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-border-4.png" alt="">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-border-4.png" alt="">
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-border-5.png" alt="">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-border-5.png" alt="">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Box-shadow</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> A propriedade box-shadow adiciona uma ou mais sombras ao redor de um elemento. 
-                                Ela ajuda a destacar caixas, criar profundidade e melhorar o contraste visual no layout.</li>
-                            <li><strong>Quando usar:</strong>
-                                <li>Destacar um card, botão ou imagem;</li>
-                                <li>Criar sensação de camada (como se o elemento estivesse acima do fundo);</li>
-                                <li>Deixar o site com um estilo mais moderno e limpo.</li>
-                            </li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-box-shadow.png"
-                            alt="Exemplo de código HTML para display flex">
-                        <img src="./assets/img/css/codigo-box-shadow.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <img src="./assets/img/css/navegador-box-shadow.png" alt="Resultado do display flex no navegador">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Transition e Transform</summary>
-
-                        <ul>
-                            <li><strong>Transition:</strong> Usada para criar efeitos suaves quando algo muda em um elemento 
-                                (como cor, tamanho ou posição).</li>
-                            <li><strong>Quando usar:</strong> Sempre que quiser deixar a mudança de estilo animada, em vez de 
-                                instantânea (por exemplo, em :hover).</li>
-                            
-                            <li><strong>Transform:</strong> Usada para mover, girar, aumentar ou diminuir elementos.</li>
-                            <li><strong>Quando usar:</strong> Quando quiser alterar a forma ou posição de um elemento 
-                                visualmente (sem afetar o layout ao redor).</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-transition-transform.png"
-                            alt="Exemplo de código HTML para display flex">
-                        <img src="./assets/img/css/codigo-transition-transform.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                        <video src="./assets/gif/navegador-transition-transform.gif" autoplay loop muted alt="Video demonstrativo de transition e tranform">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Position</summary>
-
-                        <ul>
-                            <li><strong>Static:</strong> Padrão. O elemento segue o fluxo normal da página.</li>
-                            <li><strong>Quando usar:</strong> Quando não precisa de posicionamento especial.</li>
-                            
-                            <li><strong>Relative:</strong> Permite mover o elemento em relação à sua posição original.</li>
-                            <li><strong>Quando usar:</strong> Quando quer ajustar algo levemente sem tirá-lo do fluxo.</li>
-                            
-                            <li><strong>Absolute:</strong> Posiciona em relação ao ancestral mais próximo com posição definida (ou ao body).</li>
-                            <li><strong>Quando usar:</strong> Quando quer um item fixo dentro de uma área específica.</li>
-                            
-                            <li><strong>fixed:</strong> Fica fixo na tela, mesmo rolando a página</li>
-                            <li><strong>Quando usar:</strong> Ideal para menus fixos, botões flutuantes, etc.</li>
-                            
-                            <li><strong>Sticky:</strong> Fica normal até atingir um ponto e depois “gruda” na tela.</li>
-                            <li><strong>Quando usar:</strong> Usado para cabeçalhos ou menus que grudam ao rolar.</li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-position.png"
-                            alt="Exemplo de código HTML para display flex">
-                        <img src="./assets/img/css/codigo-position.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                         <img src="./assets/img/css/navegador-position.png" alt="Exemplo de código CSS para display flex">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Z-index</summary>
-
-                        <ul>
-                            <li><strong>O que é:</strong> A propriedade z-index define a ordem de empilhamento 
-                                (camadas) dos elementos que se sobrepõem na tela.</li>
-                            <li><strong>Quando usar:</strong> Quando quiser definir quem aparece na frente e quem fica atrás.</li>
-                            <li><strong>Como funciona:</strong>
-                                <li>Quanto maior o valor do z-index, mais à frente o elemento aparece.</li>
-                                <li>Quanto menor, mais ao fundo.</li>
-                                <li>Só funciona em elementos que têm um position diferente de static (relative, absolute, fixed, ou sticky).</li>
-                            </li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-z-index.png"
-                            alt="Exemplo de código HTML para display flex">
-                        <img src="./assets/img/css/codigo-z-index.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                         <img src="./assets/img/css/navegador-z-index.png" alt="Exemplo de código CSS para display flex">
-
-                    </details>
-                </section>
-
-                <section>
-                    <details>
-                        <summary>🔹 Pseudo-classes e Pseudo-elementos</summary>
-
-                        <ul>
-                            <li><strong>Pseudo-classes (:)</strong> Servem para definir um estilo em um estado específico de um elemento, 
-                                como quando o mouse passa em cima ou o campo está em foco.</li>
-                            <li><strong>Pseudo-classe</strong>
-                                <li><strong>:hover</strong>
-                                    <li><strong>O que faz:</strong> Ativado quando o mouse passa sobre o elemento.</li>
-                                    <li><strong>Quando usar:</strong> Criar efeitos de destaque ou animações.</li>
-                                </li>
-                            
-                                <li><strong>:focus</strong>
-                                    <li><strong>O que faz:</strong> Quando o elemento (geralmente um input) recebe foco.</li>
-                                    <li><strong>Quando usar:</strong> Personalizar campos de formulário quando estão selecionados.</li>
-                                </li>
-
-                                <li><strong>:active</strong>
-                                    <li><strong>O que faz:</strong> Quando o elemento está sendo clicado.</li>
-                                    <li><strong>Quando usar:</strong> Dar feedback visual em botões ou links.</li>
-                                </li>
-                            </li>
-                        </ul>
-
-                        <ul>
-                            <li><strong>Pseudo-elementos (::)</strong> Usados para criar partes “falsas” dentro de um elemento, 
-                                sem precisar adicionar tags extras no HTML.</li>
-                            <li><strong>Pseudo-elemento</strong>
-
-                                <li><strong>::before</strong>
-                                    <li><strong>O que faz:</strong> Adiciona conteúdo antes do elemento.</li>
-                                    <li><strong>Quando usar:</strong> Criar detalhes visuais, ícones, decorações.</li>
-                                </li>
-                            
-                                <li><strong>::after</strong>
-                                    <li><strong>O que faz:</strong> Adiciona conteúdo depois do elemento.</li>
-                                    <li><strong>Quando usar:</strong> Criar setas, enfeites, efeitos extras.</li>
-                                </li>
-                            </li>
-                        </ul>
-
-                        <h3>💻 Exemplo de código</h3>
-                        <img src="./assets/img/css/codigo-html-pseudo.png"
-                            alt="Exemplo de código HTML para display flex">
-                        <img src="./assets/img/css/codigo-pseudo.png" alt="Exemplo de código CSS para display flex">
-
-                        <h3>🖥️ Resultado no navegador</h3>
-                         <img src="./assets/img/css/navegador-pseudo.png" alt="Exemplo de código CSS para display flex">
-
-                    </details>
-                </section>
-
-            </fieldset>
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Medida fr no Grid</summary>
+                <ul>
+                    <li>A unidade <code>fr</code> significa <strong>fração</strong>.</li>
+                    <li>Ela divide o <strong>espaço disponível</strong> em partes iguais ou proporcionais.</li>
+                    <li>Diferente do <code>px</code> que é fixo, o <code>fr</code> é <strong>flexível</strong> e
+                        se adapta ao tamanho da tela.</li>
+                </ul>
+
+                <h3>Exemplo</h3>
+                <p>Se temos <code>grid-template-columns: 1fr 1fr;</code> significa que o espaço é dividido em 2
+                    colunas iguais.</p>
+                <p>Já em <code>grid-template-columns: 2fr 1fr;</code> a primeira coluna ocupa o dobro de espaço
+                    da segunda</p>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-fr.png" alt="Exemplo grid com 2 colunas 1fr e 1fr" />
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-fr.png" alt="Exemplo grid com 2 colunas, uma 2fr e outra 1fr" />
+            </details>
+        </section>
+
+        <legend>📌 Espaçamento e Tamanho</legend>
+
+        <section>
+            <details>
+                <summary>🔹 Gap</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Cria um espaço entre os itens dentro de um container que usa
+                        Grid ou Flexbox.</li>
+                    <li><strong>Quando usar:</strong> É uma forma prática de separar os elementos sem precisar
+                        adicionar margin em cada um.</li>
+                    <li><strong>Também é possível usar:</strong>
+                    <li><strong>row-gap:</strong> espaçamento apenas entre as linhas</li>
+                    <li><strong>column-gap:</strong> espaçamento apenas entre as colunas</li>
+                    </li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-gap.png" alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-gap.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-gap.png" alt="Resultado do display flex no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Margin</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> A propriedade margin em CSS serve para criar espaçamento
+                        externo — ou seja, espaço entre um elemento
+                        e o que está fora dele (outros elementos, bordas do container, etc).</li>
+                    <li><strong>Quando usar:</strong>Você usa sempre que quiser afastar um elemento dos outros à
+                        sua volta.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-margin.png" alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-margin.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-margin.png" alt="Resultado do display flex no navegador">
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-margin-2.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-margin-2.png" alt="Resultado do display flex no navegador">
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-margin-3.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-margin-3.png" alt="Resultado do display flex no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Padding</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> A propriedade padding em CSS serve para criar espaçamento
+                        interno —
+                        ou seja, o espaço entre o conteúdo do elemento e a sua borda.</li>
+                    <li><strong>Quando usar:</strong> Você usa sempre que quiser dar respiro ao conteúdo interno
+                        do elemento.</li>
+                    <li><strong>Pensa assim:</strong>
+                    <li><strong>margin =</strong> espaço fora do elemento.</li>
+                    <li><strong>padding =</strong> espaço dentro do elemento.</li>
+                    </li>
+                    <li><strong>Exemplo:</strong>
+                    <li>Aumentar o espaço entre o texto e a borda de um botão.</li>
+                    <li>Criar espaço interno em cards, seções, caixas de texto.</li>
+                    <li>Evitar que o conteúdo “grude” nas bordas.</li>
+                    </li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-padding.png" alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-padding.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-padding.png" alt="Resultado do display flex no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Width</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Define a largura de um elemento.
+                        Ela pode ser medida em px, %, rem, vw, etc.</li>
+                    <li><strong>Quando usar:</strong> Use width quando quiser definir um tamanho fixo
+                        ou proporcional para um elemento, como caixas, imagens, botões ou seções.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-width-height.png" alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-width.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-width.png" alt="Resultado do display flex no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Height</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Define a altura de um elemento.
+                        Assim como o width, você pode usar px, %, rem, vh, etc.</li>
+                    <li><strong>Quando usar:</strong> Use height quando quiser controlar
+                        a altura de um bloco ou imagem, deixando o layout mais uniforme.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-width-height.png" alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-height.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-height.png" alt="Resultado do display flex no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Max-width / Max-height</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> Define a largura e altura máxima que um elemento pode ter.
+                        Mesmo que a tela seja muito grande, o elemento nunca vai ultrapassar esse limite.</li>
+                    <li><strong>Quando usar:</strong> Use em sites responsivos, especialmente em imagens,
+                        seções e containers, pra que eles não fiquem enormes em telas grandes.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-max.png" alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-max.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-max.png" alt="Resultado do display flex no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Min-width / Min-height / Overflow</summary>
+
+                <ul>
+                    <li><strong>min-width e min-height →</strong> Impedem que o elemento fique menor que um certo
+                        tamanho.
+                        Mesmo que o conteúdo ou a tela diminuam, ele não ficará menor do que o valor definido.</li>
+                    <li><strong>Overflow →</strong> Define o que acontece quando o conteúdo é maior que o elemento.</li>
+                    <li><strong>min-width →</strong> Largura mínima</li>
+                    <li><strong>min-height →</strong> Altura mínima</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-min-overflow.png" alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-min-overflow.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-min.png" alt="Exemplo de código CSS para display flex">
+                <img src="./assets/img/css/navegador-overflow.png" alt="Exemplo de código CSS para display flex">
+
+            </details>
+        </section>
+
+        <legend>📌 Estilo e Efeitos</legend>
+
+        <section>
+            <details>
+                <summary>🔹 Border</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> A propriedade border (borda) é usada para adicionar uma linha
+                        ao redor de um
+                        elemento HTML, como uma caixa, imagem, botão ou parágrafo. Ela ajuda a destacar, separar
+                        áreas ou
+                        decorar elementos na página.</li>
+                    <li><strong>Quando usar:</strong>
+                    <li>Destacar uma seção, botão ou imagem;</li>
+                    <li>Criar caixas com contorno;</li>
+                    <li>Ajudar na visualização da estrutura do layout (durante o desenvolvimento);</li>
+                    <li>Criar estilos personalizados (como bordas coloridas ou arredondadas).</li>
+                    </li>
+
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-border.png" alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-border.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-border.png" alt="Resultado do display flex no navegador">
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-border-2.png" alt="">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-border-2.png" alt="">
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-border-3.png" alt="">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-border-3.png" alt="">
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-border-4.png" alt="">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-border-4.png" alt="">
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-border-5.png" alt="">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-border-5.png" alt="">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Box-shadow</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> A propriedade box-shadow adiciona uma ou mais sombras ao redor de um
+                        elemento.
+                        Ela ajuda a destacar caixas, criar profundidade e melhorar o contraste visual no layout.</li>
+                    <li><strong>Quando usar:</strong>
+                    <li>Destacar um card, botão ou imagem;</li>
+                    <li>Criar sensação de camada (como se o elemento estivesse acima do fundo);</li>
+                    <li>Deixar o site com um estilo mais moderno e limpo.</li>
+                    </li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-box-shadow.png" alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-box-shadow.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-box-shadow.png" alt="Resultado do display flex no navegador">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Transition e Transform</summary>
+
+                <ul>
+                    <li><strong>Transition:</strong> Usada para criar efeitos suaves quando algo muda em um elemento
+                        (como cor, tamanho ou posição).</li>
+                    <li><strong>Quando usar:</strong> Sempre que quiser deixar a mudança de estilo animada, em vez de
+                        instantânea (por exemplo, em :hover).</li>
+
+                    <li><strong>Transform:</strong> Usada para mover, girar, aumentar ou diminuir elementos.</li>
+                    <li><strong>Quando usar:</strong> Quando quiser alterar a forma ou posição de um elemento
+                        visualmente (sem afetar o layout ao redor).</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-transition-transform.png"
+                    alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-transition-transform.png"
+                    alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <video src="./assets/gif/navegador-transition-transform.gif" autoplay loop muted
+                    alt="Video demonstrativo de transition e tranform">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Position</summary>
+
+                <ul>
+                    <li><strong>Static:</strong> Padrão. O elemento segue o fluxo normal da página.</li>
+                    <li><strong>Quando usar:</strong> Quando não precisa de posicionamento especial.</li>
+
+                    <li><strong>Relative:</strong> Permite mover o elemento em relação à sua posição original.</li>
+                    <li><strong>Quando usar:</strong> Quando quer ajustar algo levemente sem tirá-lo do fluxo.</li>
+
+                    <li><strong>Absolute:</strong> Posiciona em relação ao ancestral mais próximo com posição definida
+                        (ou ao body).</li>
+                    <li><strong>Quando usar:</strong> Quando quer um item fixo dentro de uma área específica.</li>
+
+                    <li><strong>fixed:</strong> Fica fixo na tela, mesmo rolando a página</li>
+                    <li><strong>Quando usar:</strong> Ideal para menus fixos, botões flutuantes, etc.</li>
+
+                    <li><strong>Sticky:</strong> Fica normal até atingir um ponto e depois “gruda” na tela.</li>
+                    <li><strong>Quando usar:</strong> Usado para cabeçalhos ou menus que grudam ao rolar.</li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-position.png" alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-position.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-position.png" alt="Exemplo de código CSS para display flex">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Z-index</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> A propriedade z-index define a ordem de empilhamento
+                        (camadas) dos elementos que se sobrepõem na tela.</li>
+                    <li><strong>Quando usar:</strong> Quando quiser definir quem aparece na frente e quem fica atrás.
+                    </li>
+                    <li><strong>Como funciona:</strong>
+                    <li>Quanto maior o valor do z-index, mais à frente o elemento aparece.</li>
+                    <li>Quanto menor, mais ao fundo.</li>
+                    <li>Só funciona em elementos que têm um position diferente de static (relative, absolute, fixed, ou
+                        sticky).</li>
+                    </li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-z-index.png" alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-z-index.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-z-index.png" alt="Exemplo de código CSS para display flex">
+
+            </details>
+        </section>
+
+        <section>
+            <details>
+                <summary>🔹 Pseudo-classes e Pseudo-elementos</summary>
+
+                <ul>
+                    <li><strong>Pseudo-classes (:)</strong> Servem para definir um estilo em um estado específico de um
+                        elemento,
+                        como quando o mouse passa em cima ou o campo está em foco.</li>
+                    <li><strong>Pseudo-classe</strong>
+                    <li><strong>:hover</strong>
+                    <li><strong>O que faz:</strong> Ativado quando o mouse passa sobre o elemento.</li>
+                    <li><strong>Quando usar:</strong> Criar efeitos de destaque ou animações.</li>
+                    </li>
+
+                    <li><strong>:focus</strong>
+                    <li><strong>O que faz:</strong> Quando o elemento (geralmente um input) recebe foco.</li>
+                    <li><strong>Quando usar:</strong> Personalizar campos de formulário quando estão selecionados.</li>
+                    </li>
+
+                    <li><strong>:active</strong>
+                    <li><strong>O que faz:</strong> Quando o elemento está sendo clicado.</li>
+                    <li><strong>Quando usar:</strong> Dar feedback visual em botões ou links.</li>
+                    </li>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li><strong>Pseudo-elementos (::)</strong> Usados para criar partes “falsas” dentro de um elemento,
+                        sem precisar adicionar tags extras no HTML.</li>
+                    <li><strong>Pseudo-elemento</strong>
+
+                    <li><strong>::before</strong>
+                    <li><strong>O que faz:</strong> Adiciona conteúdo antes do elemento.</li>
+                    <li><strong>Quando usar:</strong> Criar detalhes visuais, ícones, decorações.</li>
+                    </li>
+
+                    <li><strong>::after</strong>
+                    <li><strong>O que faz:</strong> Adiciona conteúdo depois do elemento.</li>
+                    <li><strong>Quando usar:</strong> Criar setas, enfeites, efeitos extras.</li>
+                    </li>
+                    </li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-pseudo.png" alt="Exemplo de código HTML para display flex">
+                <img src="./assets/img/css/codigo-pseudo.png" alt="Exemplo de código CSS para display flex">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-pseudo.png" alt="Exemplo de código CSS para display flex">
+
+            </details>
+        </section>
 
     </main>
 

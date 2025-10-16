@@ -49,6 +49,7 @@ nav a {
   padding: 10px 15px;
   margin: 1rem;
   font-weight: 700;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.493);
 }
 
 h1, .frase {
@@ -56,37 +57,28 @@ h1, .frase {
   justify-content: center;
   margin: 1rem 0 2rem 0;
   font-weight: 700;
+  text-shadow: 2px 3px 5px rgba(255, 255, 255, 0.493);
 }
 
 .frase {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 20px;
   text-align: center;
   width: 315px;
   margin: 0 auto;
 }
 
-summary {
-  margin-bottom: 1.2rem;
-}
-
-legend {
+legend, h2 {
   display: flex;
   justify-content: center;
   text-align: center;
   font-size: 1.55rem;
   margin: 4rem 1rem 2rem 1rem;
-}
-
-li {
-  color: #dce0e3;
+  text-shadow: 2px 3px 4px rgba(255, 255, 255, 0.586);
 }
 
 section {
   border: 2px solid #333;
-  border-radius: 8px;
+  border-radius: 20px;
   margin: 1rem;
   padding: 0.8rem;
   background-color:  #141313;
@@ -97,12 +89,88 @@ section img {
   display: block;
   margin: 10px 0 20px 0;
   border: 2px solid #333;
-  border-radius: 8px;
-  width: 15rem;
+  border-radius: 25px;
+  width: 90vw;
   height: auto;
+}
+
+/* section img:hover {
+  width: 100vw;
+} */
+
+summary {
+  line-height: 2rem; 
+  font-size: 1.4rem;
+}
+
+ul {
+  display: grid;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 1rem;
+  padding: 0.5rem 0.7rem;
+}
+
+li, p {
+  color: #dce0e3;
+  font-size: 1.1rem;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 1rem;
+  font-size: 1.3rem;
+}
+
+img {
+  width: 100px;
 }
 
 video {
   width: 300px;
 }
 
+footer {
+  display: flex;
+  padding: 1rem;
+  border: 2px solid #333;
+  border-radius: 20px;
+  background-color:  #141313;
+}
+
+h2 {
+  margin-top: 0.2rem; 
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin: 1rem 1rem;
+}
+
+.list-contact {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0 0 0;
+}
+
+.icon-contact {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.icon-contact:hover {
+    transform: scale(1.5);
+}
+
+#github, #email {
+    background-color: white;
+    border-radius: 30%;
+}
