@@ -122,6 +122,7 @@ h3{
   justify-content: center;
   margin: 1.5rem 1rem;
   font-size: 1.3rem;
+  text-align: center;
 }
 
 img {
@@ -129,7 +130,7 @@ img {
 }
 
 video {
-  width: 300px;
+  max-width: 100%;
 }
 
 footer {
