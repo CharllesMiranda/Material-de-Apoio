@@ -95,10 +95,6 @@ section img {
   height: auto;
 }
 
-/* section img:hover {
-  width: 100vw;
-} */
-
 summary {
   line-height: 2rem; 
   font-size: 1.4rem;
