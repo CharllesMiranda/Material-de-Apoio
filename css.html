@@ -1486,6 +1486,51 @@
             </details>
         </section>
 
+        <legend>📌  Responsividade</legend>
+
+        <section>
+            <details>
+                <summary>🔹 @Media</summary>
+
+                <ul>
+                    <li><strong>O que é:</strong> A regra @media permite aplicar estilos diferentes dependendo do 
+                        tamanho da tela (largura, altura, orientação, etc).</li>
+                    <li><strong>Quando usar:</strong>
+                       <li>É usada para deixar o site responsivo, ou seja, adaptado para celular, tablet e computador.</li>    
+                    </li>
+                    <li><strong>Exemplo:</strong>
+                        <li>Nesse exemplo, o botão muda de cor conforme o tamanho da tela aumenta.</li>
+                        <li>Cada bloco @media define um novo estilo que será aplicado a partir de uma largura mínima (min-width).</li>
+                        <ul>
+                            <li>Antes de 768px — o botão é verde, com texto branco (estilo padrão).</li>
+                            <li>A partir de 768px (telas médias, como tablets) — o botão fica amarelo, com texto preto.</li>
+                            <li>A partir de 1024px (telas grandes, como notebooks e monitores) — o botão muda para vermelho, com texto branco.</li>
+                        </ul>
+                        <li>Ou seja, quanto maior a largura da tela, o CSS vai aplicando o próximo conjunto de estilos definidos nas regras @media.
+                        Tudo que for alterado dentro do @media será aplicado a partir do tamanho mínimo definido (no caso de min-width) — ou até o 
+                        tamanho definido (no caso de max-width).
+                        <ul>
+                            <li>min-width: As regras dentro do @media serão aplicadas a partir do tamanho definido. 
+                                Exemplo: @media (min-width: 768px) significa que os estilos valem de 768px em diante, ou seja, para telas médias e grandes.</li>
+                            <li>max-width: As regras serão aplicadas até o tamanho definido.Exemplo: @media (max-width: 768px) 
+                                significa que os estilos valem somente até 768px, ou seja, para telas menores (celulares, por exemplo).</li>
+                        </ul>
+                        </li>
+                    </li>
+                </ul>
+
+                <h3>💻 Exemplo de código</h3>
+                <img src="./assets/img/css/codigo-html-media.png" alt="Exemplo de código HTML ">
+                <img src="./assets/img/css/codigo-media.png" alt="Exemplo de código CSS ">
+
+                <h3>🖥️ Resultado no navegador</h3>
+                <img src="./assets/img/css/navegador-media-1.png" alt="Resultado no navegador ">
+                <img src="./assets/img/css/navegador-media-2.png" alt="Resultado no navegador ">
+                <img src="./assets/img/css/navegador-media-3.png" alt="Resultado no navegador ">
+
+            </details>
+        </section>
+
     </main>
 
 </body>
